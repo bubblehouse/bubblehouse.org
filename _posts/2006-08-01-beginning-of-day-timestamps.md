@@ -1,0 +1,22 @@
+---
+layout: post
+title: beginning of day timestamps
+created: 1154477877
+categories:
+- !ruby/string:Sequel::SQL::Blob |-
+  Y29kaW5n
+- !ruby/string:Sequel::SQL::Blob |-
+  cGhw
+- !ruby/string:Sequel::SQL::Blob |-
+  cmVmbGV4aW9ucw==
+---
+<a href="http://www.driveling.net/">mark</a> got me thinking about this, and then i was messing around with one of my own projects that needed the same feature, and i realized the easy way to do it.
+
+i would always get the year/month/day out of a timestamp using the date() function, and then create a new timestamp with mktime().
+
+i just realized the best way is:
+<code>
+	$now = time();
+	$beginning_of_day = $now - ($now % 86400);
+</code>
+this works for me because i definitely remember that number for seconds in a day, and avoids any locale-dependent variations. plus, end of day becomes just as easy.

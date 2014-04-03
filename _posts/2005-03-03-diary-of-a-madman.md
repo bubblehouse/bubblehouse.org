@@ -1,0 +1,13 @@
+---
+layout: post
+title: diary of a madman
+created: 1109907905
+categories:
+- !ruby/string:Sequel::SQL::Blob |-
+  bXVzaWM=
+- !ruby/string:Sequel::SQL::Blob |-
+  dHVuZXM=
+---
+<ul>
+<li><a href="/cgi-bin/download.cgi/diary_of_a_madman.mp3">diary of a madman</a> <font size=1>(Christensen)</font>
+</ul>
