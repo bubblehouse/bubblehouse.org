@@ -9,5 +9,5 @@ categories:
   dHVuZXM=
 ---
 <ul>
-<li><a href="/cgi-bin/download.cgi/diary_of_a_madman.mp3">diary of a madman</a> <font size=1>(Christensen)</font>
+<li><a href="/cgi-bin/download.cgi/diary_of_a_madman.mp3">diary of a madman</a> <small>(Christensen)</small></li>
 </ul>

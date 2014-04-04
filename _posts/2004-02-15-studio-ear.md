@@ -8,15 +8,15 @@ categories:
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---
-<p>as i understand it, there is a semi-legitimate condition called, "studio ear." basically, when you've recorded and re-recorded a tune approximately 3 billion times, you start listening to and nitpicking every little thing. that definitely happened with the first two tunes i'm posting today. i've been working on these tunes for a couple of years, and they've gone through several incarnations. i decided to post them because, especially in the case of <i>pathways</i>, i'm getting pretty sick of playing them.</p>
+<p>as i understand it, there is a semi-legitimate condition called, &#8220;studio ear.&#8221; basically, when you&#8217;ve recorded and re-recorded a tune approximately 3 billion times, you start listening to and nitpicking every little thing. that definitely happened with the first two tunes i&#8217;m posting today. i&#8217;ve been working on these tunes for a couple of years, and they&#8217;ve gone through several incarnations. i decided to post them because, especially in the case of <i>pathways</i>, i&#8217;m getting pretty sick of playing them.</p>
+
 <OL>
-<LI><A href="http://bubblehouse.org/cgi-bin/download.cgi/pathways.mp3"><i>pathways</i></A><font SIZE=1> (Christensen)</font>
-<LI><A href="http://bubblehouse.org/cgi-bin/download.cgi/ghettoqueen.mp3"><i>ghetto queen</i></A><font SIZE=1> (Christensen)</font>
-<LI><A href="http://bubblehouse.org/cgi-bin/download.cgi/ScatteredThoughts.mp3"><i>scattered thoughts</i></A><font SIZE=1> (Christensen)</font>
+<li><A href="http://bubblehouse.org/cgi-bin/download.cgi/pathways.mp3"><i>pathways</i></A><small> (Christensen)</small></li>
+<li><A href="http://bubblehouse.org/cgi-bin/download.cgi/ghettoqueen.mp3"><i>ghetto queen</i></A><small> (Christensen)</small></li>
+<li><A href="http://bubblehouse.org/cgi-bin/download.cgi/ScatteredThoughts.mp3"><i>scattered thoughts</i></A><small> (Christensen)</small></li>
 </OL>
 
-
-<p>The third tune listed is a piano piece i wrote. it's probably going to end up split into two parts, to be played by two pianos. of course, finding <span style="text-transform: none">Serious Pianists&trade;</span> that would want to play them is another issue altogether. ;-)</p>
+<p>The third tune listed is a piano piece i wrote. it&#8217;s probably going to end up split into two parts, to be played by two pianos. of course, finding <span style="text-transform: none">Serious Pianists&trade;</span> that would want to play them is another issue altogether. ;-)</p>
 
 <pre>
 She's got the funk that keeps me sleepless every single night

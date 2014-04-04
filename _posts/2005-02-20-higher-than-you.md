@@ -9,5 +9,5 @@ categories:
   dHVuZXM=
 ---
 <ul>
-<li> <a href="/cgi-bin/download.cgi/higher_than_you.mp3">higher than you</a> <font size=1><i>(christensen)</i></font>
+<li><a href="/cgi-bin/download.cgi/higher_than_you.mp3">higher than you</a> <small><i>(christensen)</i></small></li>
 </ul>

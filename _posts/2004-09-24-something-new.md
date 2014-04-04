@@ -8,10 +8,10 @@ categories:
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---
-<p>so, now that i'm formally studying again at suny purchase, i have lots more time to write, so hopefully i'll be able to update more often. this is a new tune that i'm pretty happy with, although the track itself is kind of overproduced.</p>
+<p>so, now that i&#8217;m formally studying again at suny purchase, i have lots more time to write, so hopefully i&#8217;ll be able to update more often. this is a new tune that i&#8217;m pretty happy with, although the track itself is kind of overproduced.</p>
 
 <OL>
-<LI><A href="http://bubblehouse.org/cgi-bin/download.cgi/icuffedyouadeliciousbass.mp3"><i>i cuffed you a delicious bass</i></A><font SIZE=1> (Christensen)</font>
+<LI><A href="http://bubblehouse.org/cgi-bin/download.cgi/icuffedyouadeliciousbass.mp3"><i>i cuffed you a delicious bass</i></A><small> (Christensen)</small></LI>
 </OL>
 
 <pre>
