@@ -4,8 +4,7 @@ title: warts and all
 created: 1116843810
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 <p>In the beginning of April, I got some friends and cohorts together to record a live ep, consisting of some of my &#8220;classics&#8221;. following a delusional miles davis complex, i decided not to give the players anything to listen to of the tracks we were about to record, so they only had one rehearsal before the big day.</p>
 

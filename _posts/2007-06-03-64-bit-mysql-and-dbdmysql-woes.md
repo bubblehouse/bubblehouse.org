@@ -6,8 +6,7 @@ categories:
 - coding
 - !ruby/string:Sequel::SQL::Blob |-
   dW5peA==
-- !ruby/string:Sequel::SQL::Blob |-
-  bXlzcWw=
+- mysql
 - !ruby/string:Sequel::SQL::Blob |-
   Y29tcGlsaW5n
 ---

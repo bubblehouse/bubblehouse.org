@@ -4,8 +4,7 @@ title: Pattern-Based Drilling
 created: 1171861652
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  Z3VpdGFy
+- guitar
 - !ruby/string:Sequel::SQL::Blob |-
   bGVzc29ucw==
 ---

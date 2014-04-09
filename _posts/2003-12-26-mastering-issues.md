@@ -4,8 +4,7 @@ title: mastering issues
 created: 1072465641
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 it's funny...i read an article last night about how people new to mastering tend to over-do the bass end when mastering, typically putting too much boost on the super-low frequencies, and not the low frequencies that our ears hear the most of.
 

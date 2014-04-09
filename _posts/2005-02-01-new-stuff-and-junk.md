@@ -4,8 +4,7 @@ title: new stuff, and junk
 created: 1107288182
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 <p>here&#8217;s a couple of tunes in the usual semi-finished demo state&#8230;</p>
 

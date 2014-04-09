@@ -4,8 +4,7 @@ title: rocking junk
 created: 1071683867
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 <p>So I&#8217;ve finally gotten a ProTools setup, after nearly two years of saying i was going to do it. My primary reason for doing so is that I&#8217;m applying to <a href="http://www.purchase.edu">Purchase</a> for the third time, and I needed to be able to put in some serious time behind the mike (or in my case, <a href="http://www.amplitube.com">amp-modelling software pre-amp</a>).</p>
 

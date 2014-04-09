@@ -4,8 +4,7 @@ title: studio ear
 created: 1076824985
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 <p>as i understand it, there is a semi-legitimate condition called, &#8220;studio ear.&#8221; basically, when you&#8217;ve recorded and re-recorded a tune approximately 3 billion times, you start listening to and nitpicking every little thing. that definitely happened with the first two tunes i&#8217;m posting today. i&#8217;ve been working on these tunes for a couple of years, and they&#8217;ve gone through several incarnations. i decided to post them because, especially in the case of <i>pathways</i>, i&#8217;m getting pretty sick of playing them.</p>
 

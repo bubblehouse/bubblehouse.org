@@ -4,16 +4,11 @@ title: modu version 1.0 released!!!
 created: 1265752932
 categories:
 - coding
-- !ruby/string:Sequel::SQL::Blob |-
-  cHJvZ3JhbW1pbmc=
-- !ruby/string:Sequel::SQL::Blob |-
-  dHdpc3RlZA==
-- !ruby/string:Sequel::SQL::Blob |-
-  bW9kdQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  c29mdHdhcmU=
-- !ruby/string:Sequel::SQL::Blob |-
-  cmVsZWFzZQ==
+- programming
+- modu
+- release
+- software
+- twisted
 ---
 <p>After two years of continual development, documentation, and production use, I've arbitrarily decided to tag modu with a version 1.0, as well as make a formal release.</p>
 <p>modu is released under the <a href="http://modu.bubblehouse.org/trac/browser/trunk/LICENSE">MIT</a> license. For installation instructions, see <a href="http://modu.bubblehouse.org/trac/wiki/Installation">Installation</a> or the included <a href="http://modu.bubblehouse.org/trac/browser/tags/modu-1.0.2/INSTALL">INSTALL</a> file.</p>

@@ -4,10 +4,8 @@ title: Camp MMW Rocked My Face Off
 created: 1218553803
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  Z3VpdGFy
-- !ruby/string:Sequel::SQL::Blob |-
-  Y2FtcG1tdw==
+- guitar
+- campmmw
 ---
 It&#8217;s been two days since I returned from Camp MMW, and I still feel like I haven&#8217;t returned to reality yet. The experience was kind of like joining Fight Club &mdash; everything at work has had the volume turned down.
 

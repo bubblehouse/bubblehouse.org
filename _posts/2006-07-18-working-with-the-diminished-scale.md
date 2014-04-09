@@ -4,8 +4,7 @@ title: working with the diminished scale
 created: 1153268813
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  Z3VpdGFy
+- guitar
 - !ruby/string:Sequel::SQL::Blob |-
   bGVzc29ucw==
 ---

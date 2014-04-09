@@ -4,8 +4,7 @@ title: something new
 created: 1096071972
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 <p>so, now that i&#8217;m formally studying again at suny purchase, i have lots more time to write, so hopefully i&#8217;ll be able to update more often. this is a new tune that i&#8217;m pretty happy with, although the track itself is kind of overproduced.</p>
 

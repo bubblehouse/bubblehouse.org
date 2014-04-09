@@ -4,8 +4,7 @@ title: tunes for enjoyment
 created: 1063992977
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 <p><P>These are some recordings that I put together with matt cole (drums) and rob pawlings (bass). We had a short-lived project called <i>sesshomaru</i> that we had a lot of fun doing, even though we really didn&#8217;t have the time to do anything productive with it. We&#8217;ll see what comes of it all&#8230;</P></p>
 

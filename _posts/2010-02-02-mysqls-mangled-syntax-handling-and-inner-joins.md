@@ -5,12 +5,9 @@ created: 1265138308
 categories:
 - rants
 - coding
-- !ruby/string:Sequel::SQL::Blob |-
-  bXlzcWw=
-- !ruby/string:Sequel::SQL::Blob |-
-  cHJvZ3JhbW1pbmc=
-- !ruby/string:Sequel::SQL::Blob |-
-  c3FsaXRl
+- mysql
+- programming
+- sqlite
 ---
 As my DBA skills have progressed over the years, I'm always impressed and upset to see the extent to which MySQL has allowed me to use terrible syntax generally not accepted by standards-compliant SQL servers.
 

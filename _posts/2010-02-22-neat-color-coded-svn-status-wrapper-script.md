@@ -4,14 +4,10 @@ title: Neat Color-Coded `svn status` Wrapper Script
 created: 1266858037
 categories:
 - coding
-- !ruby/string:Sequel::SQL::Blob |-
-  cHl0aG9u
-- !ruby/string:Sequel::SQL::Blob |-
-  dW5peA==
-- !ruby/string:Sequel::SQL::Blob |-
-  YmFzaA==
-- !ruby/string:Sequel::SQL::Blob |-
-  c3Zu
+- bash
+- python
+- svn
+- unix
 ---
 A few days ago, I found a handy script online that colorized the output of SVN status. It worked pretty well, but needed a little polish and a couple of tweaks to make it use more common Python idioms. Also, I fixed ANSI word-wrapping issues, created a configurable tab expansion feature (for better code alignment), added the 'colorizedSubcommands' sequence so that only applicable commands get colorized, and fixed subprocess calls so that piping through less will work (for example, try <tt>svn-color diff | less -r</tt> to see colorized diff output).
 

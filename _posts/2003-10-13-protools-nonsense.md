@@ -4,8 +4,7 @@ title: protools nonsense
 created: 1066073046
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 <p>These are a series of tunes that I put together with the assistance of <a href="http://bubblehouse.org/~joel">joel bouchard</a> and his protools rig. We were just learning how to use the thing &mdash; for two weeks we drove ourselves crazy figuring out all its little idiosyncrasies. These are the fruits of our labor.</p>
 

@@ -2,6 +2,8 @@
 layout: post
 title: yipyipyipyipyipyipyipyip uh-huh uh-huh
 created: 1154027019
+categories:
+- esoterica
 ---
 <ul>
 <li><a href="http://www.youtube.com/watch?v=MKX0RN19zc0 ">phone home</a></li>

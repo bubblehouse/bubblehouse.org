@@ -5,8 +5,7 @@ created: 1178676834
 categories:
 - rants
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
+- tunes
 ---
 <p><i>This is a paper I wrote at some point during my Master's work. I think I had to do it because I kept forgetting to go to class, but I don't remember putting this much effort into it. It does a decent job of describing how it felt to finally break through various mental blocks about songwriting and composition.</i></p>
 

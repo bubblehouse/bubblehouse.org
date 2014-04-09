@@ -4,10 +4,8 @@ title: pedals and pedals and pedals
 created: 1165558874
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  dHVuZXM=
-- !ruby/string:Sequel::SQL::Blob |-
-  Z3VpdGFy
+- tunes
+- guitar
 ---
 <img src="http://bubblehouse.org/home/?q=system/files/12-08-06_0037.jpg"/>
 <p>
