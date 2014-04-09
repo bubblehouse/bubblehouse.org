@@ -13,11 +13,11 @@ categories:
 <p>i specifically wanted something filled with &#8220;the human element&#8221;, and i got exactly that. this was kind of my response to the sterilized studio environment at suny purchase, and i was very happy with the results&#8230;</p>
 
 <ol>
-<li><a href="http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/01_ghetto_queen.mp3"><i>ghetto queen</i></a> <small>(Christensen)</small></li>
-<li><a href="http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/02_pathways.mp3"><i>pathways</i></a> <small>(Christensen)</small></li>
-<li><a href="http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/03_who_stepped_on_dizs_horn.mp3"><i>who stepped on diz&#8217;s horn</i></a> <small>(Christensen/Wilson)</small></li>
-<li><a href="http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/04_harvest.mp3"><i>harvest</i></a> <small>(Christensen/Hovish)</small></li>
-<li><a href="http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/05_if_i_could_see.mp3"><i>if i could see</i></a> <small>(Christensen)</small></li>
+<li><a href="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/01_ghetto_queen.mp3"><i>ghetto queen</i></a> <small>(Christensen)</small></li>
+<li><a href="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/02_pathways.mp3"><i>pathways</i></a> <small>(Christensen)</small></li>
+<li><a href="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/03_who_stepped_on_dizs_horn.mp3"><i>who stepped on diz&#8217;s horn</i></a> <small>(Christensen/Wilson)</small></li>
+<li><a href="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/04_harvest.mp3"><i>harvest</i></a> <small>(Christensen/Hovish)</small></li>
+<li><a href="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/05_if_i_could_see.mp3"><i>if i could see</i></a> <small>(Christensen)</small></li>
 </ol>
 
 <p>The players on this session were:</p>

@@ -15,7 +15,7 @@ categories:
 <p>anyways, this tune is another one <a href="http://www.livejournal.com/users/bataille">larry hovish</a> and i collaborated on. we kinda were going for an alt-rock kind of feel, which i believe we suceeded in. furthermore, my solo in this tune has a nice crappy-neil-young quality to it. okay, that was not intentional, i was just sick of protools, and i didn&#8217;t feel like doing it over again.</p>
 
 <ul>
-<li><A href="http://bubblehouse.org/cgi-bin/download.cgi/ghosttrain.mp3"><i>Ghost Train</i></A></li>
+<li><A href="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/ghosttrain.mp3"><i>Ghost Train</i></A></li>
 </ul>
 
 <pre>

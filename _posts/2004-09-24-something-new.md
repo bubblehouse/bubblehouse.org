@@ -11,7 +11,7 @@ categories:
 <p>so, now that i&#8217;m formally studying again at suny purchase, i have lots more time to write, so hopefully i&#8217;ll be able to update more often. this is a new tune that i&#8217;m pretty happy with, although the track itself is kind of overproduced.</p>
 
 <OL>
-<LI><A href="http://bubblehouse.org/cgi-bin/download.cgi/icuffedyouadeliciousbass.mp3"><i>i cuffed you a delicious bass</i></A><small> (Christensen)</small></LI>
+<LI><A href="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/icuffedyouadeliciousbass.mp3"><i>i cuffed you a delicious bass</i></A><small> (Christensen)</small></LI>
 </OL>
 
 <pre>

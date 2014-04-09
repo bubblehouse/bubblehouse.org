@@ -5,331 +5,10 @@
         <description>Bubblehouse - Phil Christensen</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-04-08T20:57:06-04:00</lastBuildDate>
-        <pubDate>2014-04-08T20:57:06-04:00</pubDate>
+        <lastBuildDate>2014-04-08T21:10:42-04:00</lastBuildDate>
+        <pubDate>2014-04-08T21:10:42-04:00</pubDate>
         <ttl>1800</ttl>
 
-
-        <item>
-                <title>Jekyll Introduction</title>
-                <description>&lt;p&gt;This Jekyll introduction will outline specifically what Jekyll is and why you would want to use it. Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
-
-&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
-
-&lt;h3 id=&quot;what_is_jekyll&quot;&gt;What is Jekyll?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.&lt;/p&gt;
-
-&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
-
-&lt;p&gt;This website is created with Jekyll. &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Sites&quot;&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;what_does_jekyll_do&quot;&gt;What does Jekyll Do?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a ruby gem you install on your local system. Once there you can call &lt;code&gt;jekyll --server&lt;/code&gt; on a directory and provided that directory is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
-
-&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static &lt;code&gt;_site&lt;/code&gt; folder. The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
-
-&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags on each request, Jekyll does this once &lt;em&gt;beforehand&lt;/em&gt; and caches the &lt;em&gt;entire website&lt;/em&gt; in a folder for serving statically.&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyll_is_not_blogging_software&quot;&gt;Jekyll is Not Blogging Software&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Jekyll is a parsing engine.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Jekyll does not come with any content nor does it have any templates or design elements. This is a common source of confusion when getting started. Jekyll does not come with anything you actually use or see on your website - you have to make it.&lt;/p&gt;
-
-&lt;h3 id=&quot;why_should_i_care&quot;&gt;Why Should I Care?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is very minimalistic and very efficient. The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server. Traditional dynamic blogs like Wordpress require a database and server-side code. Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.&lt;/p&gt;
-
-&lt;p&gt;Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Developers like Jekyll because we can write content like we write code:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ability to write content in markdown or textile in your favorite text-editor.&lt;/li&gt;
-
-&lt;li&gt;Ability to write and preview your content via localhost.&lt;/li&gt;
-
-&lt;li&gt;No internet connection required.&lt;/li&gt;
-
-&lt;li&gt;Ability to publish via git.&lt;/li&gt;
-
-&lt;li&gt;Ability to host your blog on a static web-server.&lt;/li&gt;
-
-&lt;li&gt;Ability to host freely on GitHub Pages.&lt;/li&gt;
-
-&lt;li&gt;No database required.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;how_jekyll_works&quot;&gt;How Jekyll Works&lt;/h1&gt;
-
-&lt;p&gt;The following is a complete but concise outline of exactly how Jekyll works.&lt;/p&gt;
-
-&lt;p&gt;Be aware that core concepts are introduced in rapid succession without code examples. This information is not intended to specifically teach you how to do anything, rather it is intended to give you the &lt;em&gt;full picture&lt;/em&gt; relative to what is going on in Jekyll-world.&lt;/p&gt;
-
-&lt;p&gt;Learning these core concepts should help you avoid common frustrations and ultimately help you better understand the code examples contained throughout Jekyll-Bootstrap.&lt;/p&gt;
-
-&lt;h2 id=&quot;initial_setup&quot;&gt;Initial Setup&lt;/h2&gt;
-
-&lt;p&gt;After &lt;a href=&quot;/index.html#start-now&quot;&gt;installing jekyll&lt;/a&gt; you’ll need to format your website directory in a way jekyll expects. Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
-
-&lt;h3 id=&quot;the_jekyll_application_base_format&quot;&gt;The Jekyll Application Base Format&lt;/h3&gt;
-
-&lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- _config.yml
-|-- _includes
-|-- _layouts
-|   |-- default.html
-|   |-- post.html
-|-- _posts
-|   |-- 2011-10-25-open-source-is-good.markdown
-|   |-- 2011-04-26-hello-world.markdown
-|-- _site
-|-- index.html
-|-- assets
-    |-- css
-        |-- style.css
-    |-- javascripts&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_config.yml&lt;/strong&gt; Stores configuration data.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_includes&lt;/strong&gt; This folder is for partial views.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_layouts&lt;/strong&gt; This folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_posts&lt;/strong&gt; This folder contains your dynamic content/posts. the naming format is required to be &lt;code&gt;@YEAR-MONTH-DATE-title.MARKUP@&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt; This is where the generated site will be placed once Jekyll is done transforming it.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;assets&lt;/strong&gt; This folder is not part of the standard jekyll structure. The assets folder represents &lt;em&gt;any generic&lt;/em&gt; folder you happen to create in your root directory. Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(read more: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Usage&quot;&gt;https://github.com/mojombo/jekyll/wiki/Usage&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyll_configuration&quot;&gt;Jekyll Configuration&lt;/h3&gt;
-
-&lt;p&gt;Jekyll supports various configuration options that are fully outlined here: (&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h2 id=&quot;content_in_jekyll&quot;&gt;Content in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Content in Jekyll is either a post or a page. These content “objects” get inserted into one or more templates to build the final output for its respective static-page.&lt;/p&gt;
-
-&lt;h3 id=&quot;posts_and_pages&quot;&gt;Posts and Pages&lt;/h3&gt;
-
-&lt;p&gt;Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax. Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.&lt;/p&gt;
-
-&lt;h3 id=&quot;working_with_posts&quot;&gt;Working With Posts&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt; Posts are created by properly formatting a file and placing it the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt; A post must have a valid filename in the form &lt;code&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code&gt;_posts&lt;/code&gt; directory. If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file. Additionally, each file must have &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt; prepended to its content. YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Order&lt;/strong&gt; Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy. Only reverse chronological and chronological ordering is supported in Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt; Posts can have tags associated with them as part of their meta-data. Tags may be placed on posts by providing them in the post’s YAML front matter. You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt; Posts may be categorized by providing one or more categories in the YAML front matter. Categories offer more significance over tags in that they can be reflected in the URL path to the given post. Note categories in Jekyll work in a specific way. If you define more than one category you are defining a category hierarchy “set”. Example:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;title :  Hello World
-categories : [lessons, beginner]&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;This defines the category hierarchy “lessons/beginner”. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll. You won’t find “lessons” and “beginner” as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
-
-&lt;h3 id=&quot;working_with_pages&quot;&gt;Working With Pages&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Page&lt;/strong&gt; Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do &lt;em&gt;not&lt;/em&gt; start with an underscore.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt; In order to register as a Jekyll page the file must contain &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt;. Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the &lt;code&gt;site.pages&lt;/code&gt; array for inclusion into your templates.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories and Tags&lt;/strong&gt; Pages do not compute categories nor tags so defining them will have no effect.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sub-Directories&lt;/strong&gt; If pages are defined in sub-directories, the path to the page will be reflected in the url. Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- people
-    |-- bob
-        |-- essay.html&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This page will be available at &lt;code&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Recommended Pages&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;index.html&lt;/strong&gt; You will always want to define the root index.html page as this will display on your root URL.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;404.html&lt;/strong&gt; Create a root 404.html page and GitHub Pages will serve it as your 404 response.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;sitemap.html&lt;/strong&gt; Generating a sitemap is good practice for SEO.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;about.html&lt;/strong&gt; A nice about page is easy to do and gives the human perspective to your website.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;templates_in_jekyll&quot;&gt;Templates in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Templates are used to contain a page’s or post’s content. All templates have access to a global site object variable: &lt;code&gt;site&lt;/code&gt; as well as a page object variable: &lt;code&gt;page&lt;/code&gt;. The site variable holds all accessible content and metadata relative to the site. The page variable holds accessible data for the given page or post being rendered at that point.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Create a Template&lt;/strong&gt; Templates are created by properly formatting a file and placing it in the &lt;code&gt;_layouts&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt; Templates should be coded in HTML and contain YAML Front Matter. All templates can contain Liquid code to work with your site’s data.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rending Page/Post Content in a Template&lt;/strong&gt; There is a special variable in all templates named : &lt;code&gt;content&lt;/code&gt;. The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined. Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;...
-&amp;lt;body&amp;gt;
-  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
-  &amp;lt;div id=&quot;main&quot;&amp;gt;
-    &amp;#123;{content}&amp;#125;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-...&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;subtemplates&quot;&gt;Sub-Templates&lt;/h3&gt;
-
-&lt;p&gt;Sub-templates are exactly templates with the only difference being they define another “root” layout/template within their YAML Front Matter. This essentially means a template will render inside of another template.&lt;/p&gt;
-
-&lt;h3 id=&quot;includes&quot;&gt;Includes&lt;/h3&gt;
-
-&lt;p&gt;In Jekyll you can define include files by placing them in the &lt;code&gt;_includes&lt;/code&gt; folder. Includes are NOT templates, rather they are just code snippets that get included into templates. In this way, you can treat the code inside includes as if it was native to the parent template.&lt;/p&gt;
-
-&lt;p&gt;Any valid template code may be used in includes.&lt;/p&gt;
-
-&lt;h2 id=&quot;using_liquid_for_templating&quot;&gt;Using Liquid for Templating&lt;/h2&gt;
-
-&lt;p&gt;Templating is perhaps the most confusing and frustrating part of Jekyll. This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.&lt;/p&gt;
-
-&lt;h3 id=&quot;what_is_liquid&quot;&gt;What is Liquid?&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Shopify/liquid&quot;&gt;Liquid&lt;/a&gt; is a secure templating language developed by &lt;a href=&quot;http://shopify.com&quot;&gt;Shopify&lt;/a&gt;. Liquid is designed for end-users to be able to execute logic within template files without imposing any security risk on the hosting server.&lt;/p&gt;
-
-&lt;p&gt;Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with your site and post/page data.&lt;/p&gt;
-
-&lt;h3 id=&quot;why_do_we_have_to_use_liquid&quot;&gt;Why Do We Have to Use Liquid?&lt;/h3&gt;
-
-&lt;p&gt;GitHub uses Jekyll to power &lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.&lt;/p&gt;
-
-&lt;h3 id=&quot;liquid_is_not_programmerfriendly&quot;&gt;Liquid is Not Programmer-Friendly.&lt;/h3&gt;
-
-&lt;p&gt;The short story is liquid is not real code and its not intended to execute real code. The point being you can’t do jackshit in liquid that hasn’t been allowed explicitly by the implementation. What’s more you can only access data-structures that have been explicitly passed to the template.&lt;/p&gt;
-
-&lt;p&gt;In Jekyll’s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins. Both of which cannot be supported by GitHub Pages.&lt;/p&gt;
-
-&lt;p&gt;As a programmer - this is very frustrating.&lt;/p&gt;
-
-&lt;p&gt;But rather than look a gift horse in the mouth we are going to suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Aside&lt;/strong&gt; My personal stance is to not invest time trying to hack liquid. It’s really unnecessary &lt;em&gt;from a programmer’s&lt;/em&gt; perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code) you are better off sticking with ruby. Toward that end I’ve built &lt;a href=&quot;http://github.com/plusjade/mustache-with-jekyll&quot;&gt;Mustache-with-Jekyll&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;static_assets&quot;&gt;Static Assets&lt;/h2&gt;
-
-&lt;p&gt;Static assets are any file in the root or non-underscored subfolders that are not pages. That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.&lt;/p&gt;
-
-&lt;p&gt;Static assets should be used for images, css, and javascript files.&lt;/p&gt;
-
-&lt;h2 id=&quot;how_jekyll_parses_files&quot;&gt;How Jekyll Parses Files&lt;/h2&gt;
-
-&lt;p&gt;Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Content parsing.&lt;/strong&gt; This is done with textile or markdown.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;Template parsing.&lt;/strong&gt; This is done with the liquid templating language.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And thus there are two main types of file formats needed for this parsing.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Post and Page files.&lt;/strong&gt; All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;Template files.&lt;/strong&gt; These files go in &lt;code&gt;_layouts&lt;/code&gt; folder and contain your blogs &lt;strong&gt;templates&lt;/strong&gt;. They should be made in HTML with the help of Liquid syntax. Since include files are simply injected into templates they are essentially parsed as if they were native to the template.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Arbitrary files and folders.&lt;/strong&gt; Files that &lt;em&gt;are not&lt;/em&gt; valid pages are treated as static content and pass through Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.&lt;/p&gt;
-
-&lt;h3 id=&quot;formatting_files_for_parsing&quot;&gt;Formatting Files for Parsing.&lt;/h3&gt;
-
-&lt;p&gt;We’ve outlined the need for valid formatting using &lt;strong&gt;YAML Front Matter&lt;/strong&gt;. Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty. This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
-
-&lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;layout: post
-category : pages
-tags : [how-to, jekyll]&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;pre&gt;&lt;code&gt;... contents ...&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block. The data inside the block must be valid YAML.&lt;/p&gt;
-
-&lt;p&gt;Configuration parameters for YAML Front-Matter is outlined here: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;A comprehensive explanation of YAML Front Matter&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;defining_layouts_for_posts_and_templates_parsing&quot;&gt;Defining Layouts for Posts and Templates Parsing.&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into. If a template file specifies its own layout, it is effectively being used as a &lt;code&gt;sub-template.&lt;/code&gt; That is to say loading a post file into a template file that refers to another template file with work in the way you’d expect; as a nested sub-template.&lt;/p&gt;
-
-&lt;h2 id=&quot;how_jekyll_generates_the_final_static_files&quot;&gt;How Jekyll Generates the Final Static Files.&lt;/h2&gt;
-
-&lt;p&gt;Ultimately, Jekyll’s job is to generate a static representation of your website. The following is an outline of how that’s done:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll collects data.&lt;/strong&gt; Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll computes data.&lt;/strong&gt; Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one big &lt;code&gt;site&lt;/code&gt; object that holds all the posts, pages, layouts, and respective metadata. At this stage your site is one big computed ruby object.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll liquifies posts and templates.&lt;/strong&gt; Next jekyll loops through each post file and converts (through markdown or textile) and &lt;strong&gt;liquifies&lt;/strong&gt; the post inside of its respective layout(s). Once the post is parsed and liquified inside the the proper layout structure, the layout itself is “liquified”. &lt;strong&gt;Liquification&lt;/strong&gt; is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll generates output.&lt;/strong&gt; Finally the liquid templates are “rendered”, thereby processing any liquid syntax provided in the templates and saving the final, static representation of the file.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Notes.&lt;/strong&gt; Because Jekyll computes the entire site in one fell swoop, each template is given access to a global &lt;code&gt;site&lt;/code&gt; hash that contains useful data. It is this data that you’ll iterate through and format using the Liquid tags and filters in order to render it onto a given page.&lt;/p&gt;
-
-&lt;p&gt;Remember, in Jekyll you are an end-user. Your API has only two components:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;The manner in which you setup your directory.&lt;/li&gt;
-
-&lt;li&gt;The liquid syntax and variables passed into the liquid templates.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;All the data objects available to you in the templates via Liquid are outlined in the &lt;strong&gt;API Section&lt;/strong&gt; of Jekyll-Bootstrap. You can also read the original documentation here: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;https://github.com/mojombo/jekyll/wiki/Template-Data&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does. As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.&lt;/p&gt;
-
-&lt;p&gt;Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt; for reading this far.&lt;/p&gt;
-
-&lt;h2 id=&quot;next_steps&quot;&gt;Next Steps&lt;/h2&gt;
-
-&lt;p&gt;Please take a look at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; or jump right into &lt;a href=&quot;&quot;&gt;Usage&lt;/a&gt; if you’d like.&lt;/p&gt;</description>
-                <link>http://username.github.io/lessons/2011/12/29/jekyll-introduction</link>
-                <guid>http://username.github.io/lessons/2011/12/29/jekyll-introduction</guid>
-                <pubDate>2011-12-29T00:00:00-05:00</pubDate>
-        </item>
 
         <item>
                 <title>Neat Color-Coded `svn status` Wrapper Script</title>
@@ -341,8 +20,8 @@ tags : [how-to, jekyll]&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;i’ve posted the code on &lt;a href='http://snipplr.com'&gt;snipplr&lt;/a&gt;, and it’s also posted below after the break.&lt;/p&gt;
 &lt;!--break--&gt;&lt;div class='snipplr_embed' id='snipplr_embed_28748'&gt;&lt;a href='http://snipplr.com/view/28748/colorcoded-svn-status-v3/'&gt;code snippet - color-coded `svn status` (v3)&lt;/a&gt; on snipplr&lt;/div&gt;&lt;script src='http://snipplr.com/js/embed.js' type='text/javascript'&gt;&lt;![CDATA[]]&gt;&lt;/script&gt;&lt;script src='http://snipplr.com/json/28748' type='text/javascript'&gt;&lt;![CDATA[]]&gt;&lt;/script&gt;</description>
-                <link>http://username.github.io/y29kaw5n/chl0ag9u/dw5pea==/ymfzaa==/c3zu/2010/02/22/neat-color-coded-svn-status-wrapper-script</link>
-                <guid>http://username.github.io/y29kaw5n/chl0ag9u/dw5pea==/ymfzaa==/c3zu/2010/02/22/neat-color-coded-svn-status-wrapper-script</guid>
+                <link>http://username.github.io/2010/02/22/neat-color-coded-svn-status-wrapper-script</link>
+                <guid>http://username.github.io/2010/02/22/neat-color-coded-svn-status-wrapper-script</guid>
                 <pubDate>2010-02-22T00:00:00-05:00</pubDate>
         </item>
 
@@ -374,8 +53,8 @@ tags : [how-to, jekyll]&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;h4&gt;SVN Tag&lt;/h4&gt;&lt;p&gt;To check out a snapshot of the source code from SVN HEAD, use the following incantation:&lt;/p&gt;&lt;pre&gt;
 svn co http://svn.bubblehouse.org/modu/tags/modu-1.0.2&lt;/pre&gt;</description>
-                <link>http://username.github.io/y29kaw5n/chjvz3jhbw1pbmc=/dhdpc3rlza==/bw9kdq==/c29mdhdhcmu=/cmvszwfzzq==/2010/02/09/modu-version-1-0-released</link>
-                <guid>http://username.github.io/y29kaw5n/chjvz3jhbw1pbmc=/dhdpc3rlza==/bw9kdq==/c29mdhdhcmu=/cmvszwfzzq==/2010/02/09/modu-version-1-0-released</guid>
+                <link>http://username.github.io/2010/02/09/modu-version-1-0-released</link>
+                <guid>http://username.github.io/2010/02/09/modu-version-1-0-released</guid>
                 <pubDate>2010-02-09T00:00:00-05:00</pubDate>
         </item>
 
@@ -402,8 +81,8 @@ svn co http://svn.bubblehouse.org/modu/tags/modu-1.0.2&lt;/pre&gt;</description>
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span style='color:#dfb098;'&gt;ORDER&lt;/span&gt; &lt;span style='color:#dfb098;'&gt;BY&lt;/span&gt; r.name, p.name&lt;br /&gt;
 &lt;/div&gt;
 &lt;p&gt;This works for me properly in both SQLite and MySQL. I’m curious what it was that made me ever start writing nested JOINs in the former method; it was fairly error-prone due to missing parenthesis, etc.&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/y29kaw5n/bxlzcww=/chjvz3jhbw1pbmc=/c3fsaxrl/2010/02/02/mysqls-mangled-syntax-handling-and-inner-joins</link>
-                <guid>http://username.github.io/cmfudhm=/y29kaw5n/bxlzcww=/chjvz3jhbw1pbmc=/c3fsaxrl/2010/02/02/mysqls-mangled-syntax-handling-and-inner-joins</guid>
+                <link>http://username.github.io/2010/02/02/mysqls-mangled-syntax-handling-and-inner-joins</link>
+                <guid>http://username.github.io/2010/02/02/mysqls-mangled-syntax-handling-and-inner-joins</guid>
                 <pubDate>2010-02-02T00:00:00-05:00</pubDate>
         </item>
 
@@ -603,8 +282,8 @@ MACOSX_DEPLOYMENT_TARGET=10.5 CFLAGS=&amp;quot;-arch ppc -g -Os -pipe -no-cpp-pr
 &lt;p&gt;Sometimes when I see really amazing musicians, I go home with this feeling of “why do I bother even playing at all?”, and want to pack my guitar away and give up. This time, however, despite getting an even clearer picture of how amazing MMW is, I went home thinking “okay, I understand what I have to do. it’s hard, but at least I &lt;em&gt;understand&lt;/em&gt; it.”&lt;/p&gt;
 
 &lt;p&gt;Now let’s see how long this feeling lasts.&lt;/p&gt;</description>
-                <link>http://username.github.io/bxvzawm=/z3vpdgfy/y2ftcg1tdw==/2008/08/12/camp-mmw-rocked-my-face-off</link>
-                <guid>http://username.github.io/bxvzawm=/z3vpdgfy/y2ftcg1tdw==/2008/08/12/camp-mmw-rocked-my-face-off</guid>
+                <link>http://username.github.io/2008/08/12/camp-mmw-rocked-my-face-off</link>
+                <guid>http://username.github.io/2008/08/12/camp-mmw-rocked-my-face-off</guid>
                 <pubDate>2008-08-12T00:00:00-04:00</pubDate>
         </item>
 
@@ -619,8 +298,8 @@ $V[$W+055].$V[$W+0x5A]));$_=~tr,a-zA-Z,n-za-mN-ZA-M,;print $_;}};$Z-&amp;gt;(100
 3411,2613,0x840,1321,1763,0x7db,1910,2151,0x584,1312,1771,0x715,1714,2130,0x77a,
 2112,3256,0x4ba,1411,7032,0x5ef,1718,2142,0x6af,1812,2442,0x6b0,1417);
 &lt;/pre&gt;</description>
-                <link>http://username.github.io/y29kaw5n/cgvyba==/amfwaa==/2008/03/17/japh</link>
-                <guid>http://username.github.io/y29kaw5n/cgvyba==/amfwaa==/2008/03/17/japh</guid>
+                <link>http://username.github.io/2008/03/17/japh</link>
+                <guid>http://username.github.io/2008/03/17/japh</guid>
                 <pubDate>2008-03-17T00:00:00-04:00</pubDate>
         </item>
 
@@ -654,8 +333,8 @@ $V[$W+055].$V[$W+0x5A]));$_=~tr,a-zA-Z,n-za-mN-ZA-M,;print $_;}};$Z-&amp;gt;(100
 &lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Yes, ridiculous, I know. But it fixed the problem, and everything is working fine now.&lt;/p&gt;</description>
-                <link>http://username.github.io/y29kaw5n/dw5pea==/bxlzcww=/y29tcglsaw5n/2007/06/03/64-bit-mysql-and-dbdmysql-woes</link>
-                <guid>http://username.github.io/y29kaw5n/dw5pea==/bxlzcww=/y29tcglsaw5n/2007/06/03/64-bit-mysql-and-dbdmysql-woes</guid>
+                <link>http://username.github.io/2007/06/03/64-bit-mysql-and-dbdmysql-woes</link>
+                <guid>http://username.github.io/2007/06/03/64-bit-mysql-and-dbdmysql-woes</guid>
                 <pubDate>2007-06-03T00:00:00-04:00</pubDate>
         </item>
 
@@ -684,8 +363,8 @@ $ clit two.lit oebps/two.lit/
 $ clit three.lit oebps/three.lit/
 $ ...
 $ ...&lt;/pre&gt;&lt;p&gt;I&amp;#8217;m replicating the syntax of &lt;tt&gt;find&lt;/tt&gt;&amp;#8217;s &lt;tt&gt;-exec&lt;/tt&gt; switch with &lt;tt&gt;xargs&lt;/tt&gt;&amp;#8217; &lt;tt&gt;-I&lt;/tt&gt; switch. This will replace all occurrences of the &lt;tt&gt;{}&lt;/tt&gt; with the filename from standard input.&lt;/p&gt;</description>
-                <link>http://username.github.io/y29kaw5n/dw5pea==/ymfzaa==/2007/05/16/fun-with-xargs-on-mac-os-x</link>
-                <guid>http://username.github.io/y29kaw5n/dw5pea==/ymfzaa==/2007/05/16/fun-with-xargs-on-mac-os-x</guid>
+                <link>http://username.github.io/2007/05/16/fun-with-xargs-on-mac-os-x</link>
+                <guid>http://username.github.io/2007/05/16/fun-with-xargs-on-mac-os-x</guid>
                 <pubDate>2007-05-16T00:00:00-04:00</pubDate>
         </item>
 
@@ -694,8 +373,8 @@ $ ...&lt;/pre&gt;&lt;p&gt;I&amp;#8217;m replicating the syntax of &lt;tt&gt;find
                 <description>&lt;p&gt;&lt;i&gt;This is a paper I wrote at some point during my Master's work. I think I had to do it because I kept forgetting to go to class, but I don't remember putting this much effort into it. It does a decent job of describing how it felt to finally break through various mental blocks about songwriting and composition.&lt;/i&gt;&lt;/p&gt;&lt;p style='text-align: right; font: 10.0px'&gt;[most emphasis is non-essential]&lt;/p&gt;&lt;p&gt;The &lt;i&gt;compositional process&lt;/i&gt; has always been a difficult subject for me to adequately understand. For a long time I put forth a lot of effort to make my style of writing fit into a particular mold, only to be disappointed with the results. For an equally long time I had an idea of the kind of music I wanted to write, but I couldn't find the right method or approach to create this sound I heard.&lt;/p&gt;&lt;p&gt;This diatribe is a way for me to document the various discoveries I made as I began to develop my writing. Some of these things are really &quot;well, duh...&quot; kind of discoveries, but for me they are a way of simplifying &lt;b&gt;important concepts&lt;/b&gt; that I find &lt;b&gt;&lt;i&gt;easy to forget&lt;/i&gt;&lt;/b&gt;.&lt;/p&gt;&lt;!--break--&gt;&lt;p&gt;Although I've written music, in a way, as long as I've played any instrument, it has always been under the guise of improvisational jamming. In this sense, I was writing a piece every time I played any given song; perhaps this is why it was a long time before I ever really wrote a &lt;i&gt;completely original&lt;/i&gt; piece of music. As far as I was concerned, the songs were just platforms for (preferably) &lt;i&gt;group improvisation&lt;/i&gt;. Even after I began writing, &lt;b&gt;and to a certain extent even now,&lt;/b&gt; I always wrote with the intention of leaving space for improvisation.&lt;/p&gt;&lt;p&gt;I soon realized how difficult this can be. Writing in such a manner is kind of &lt;i&gt;risky&lt;/i&gt;—not that I'm &lt;b&gt;risk-averse&lt;/b&gt;, but you have to accept that when you're taking a risk musically, in real time, sometimes it's just not going to work. &lt;b&gt;Sometimes, you're going to play shit&lt;/b&gt;, and there's nothing you can really do about it.&lt;/p&gt;&lt;p&gt;Furthermore, I knew there was other approaches that I wanted to explore. I have long had an interest in electronic music, but had never really considered creating it. This changed when I discovered &lt;b&gt;Apple Soundtrack&lt;/b&gt;, and more &lt;i&gt;specifically&lt;/i&gt;, the extensive loop library that came with it.&lt;/p&gt;&lt;p&gt;As an aside, I have to acknowledge the role that &lt;b&gt;software piracy&lt;/b&gt; played in my development. Due to my history of &lt;b&gt;&lt;i&gt;computational dorkery&lt;/i&gt;&lt;/b&gt;, I had access to a wealth of audio applications that I certainly could not have afforded at the time. As my professional experience grows, I'm slowly replacing oft-used software with legitimate copies, but I never could have scratched the surface of what's possible electronically without the access I had to this software.&lt;/p&gt;&lt;p&gt;At any rate, working with loops in &lt;b&gt;Apple Soundtrack&lt;/b&gt; let me explore a variety of musical contexts without spending a lot of time building the fundamental components. I learned early on to disregard the pitch of the loops I was choosing, which led me to realize &lt;i&gt;Phil's Compositional Discovery #1&lt;/i&gt;:&lt;/p&gt;&lt;h2&gt;It's Good to Forget Everything You've Learned&lt;/h2&gt;&lt;p&gt;I had been &lt;i&gt;struggling&lt;/i&gt; with repetition for some time. Even now it's easy for me to really get into a particular groove (or rut) with particular &lt;b&gt;concepts/sounds/patterns&lt;/b&gt;. For a long time I would try to use the various &lt;i&gt;theoretical&lt;/i&gt; tools at my disposal to try to &lt;i&gt;invent&lt;/i&gt; a chord progression, or melody. This would sometimes work, but the result didn't seem very &lt;i&gt;interesting&lt;/i&gt;. Every now and then, although I didn't realize it at the time, I would have success in&lt;b&gt;letting my ears find the chords&lt;/b&gt;, and the result was satisfying.&lt;/p&gt;&lt;p&gt;Working in prefabricated loops let me practice my arranging skills, and explore things that would take too long to try before. I also had the opportunity to really hear how it would sound if I juxtaposed some &lt;b&gt;rootsy funk&lt;/b&gt; against an &lt;b&gt;electro beat&lt;/b&gt;, or played &lt;i&gt;soothing piano melodies&lt;/i&gt; over &lt;i&gt;abstract atmospheres&lt;/i&gt;.&lt;/p&gt;&lt;p&gt;I soon outgrew &lt;b&gt;Soundtrack&lt;/b&gt;, and moved onto &lt;b&gt;Ableton Live&lt;/b&gt;, and then my personal favorite, &lt;b&gt;Reason&lt;/b&gt;. This software really allowed me to perform &lt;b&gt;&lt;i&gt;Rapid Composition Development&lt;/i&gt;&lt;/b&gt;, but this in itself started to concern me. It seemed so easy to grab assorted material and mash it all together, I felt there had to be a catch. I didn't believe I could really call what I was doing composition.&lt;/p&gt;&lt;p&gt;Of course, months later, I had had the pleasure of composing some &lt;b&gt;really bad music&lt;/b&gt;, and it became clear that &lt;b&gt;there was some skill involved&lt;/b&gt;. I still attempt to avoid using any particular sample or preset in it's &lt;i&gt;unaltered&lt;/i&gt; form, but this did help me understand a phrase I read in Frank Zappa's autobiography:&lt;/p&gt;&lt;h2&gt;If It Sounds Good To You, Then It's Bitchen&lt;/h2&gt;&lt;p&gt;Another facet of songwriting I have recently been practicing is &lt;i&gt;the complex art of lyric-writing&lt;/i&gt;. I'm not a stranger to the written word, but &lt;b&gt;I have a complex relationship with poetry&lt;/b&gt;, which seemed to me to be an analog to the lyrics I was trying to write. These complexities are basically due to the fact that most of the poetry I've written in my lifetime has been utterly secret, or shamefully &lt;b&gt;&lt;i&gt;angsty&lt;/i&gt;&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;This seemed to be reflected in my lyrics, at least in the fact that every song I've ever written with lyrics, at least until recently, were always about the women (or girls, at the time) that were causing me such &lt;b&gt;turmoil&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;I didn't want to write the kind of &lt;i&gt;self-indulgent tripe&lt;/i&gt; that I heard on the Top 40 stations. These tunes weren't &lt;i&gt;terrible&lt;/i&gt;, but I still felt there was something that I didn't like about them. More recently, I thought some more on this matter, and decided that the primary thing that bothers me is &lt;b&gt;overuse of the first person&lt;/b&gt;. This is the foundation of another pseudo-discovery:&lt;/p&gt;&lt;h2&gt;&quot;I&quot; is a Dangerously Powerful Lyrical Tool&lt;/h2&gt;&lt;p&gt;The writer's &quot;I&quot; is something that needs to be used very &lt;i&gt;delicately&lt;/i&gt;, especially as a songwriter. Lyrics seem to have a powerful pressure on us as listeners, and the first person really has the ability to put the listener in a &lt;b&gt;serious place&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;This idea has an associated concept, and that's the idea of literal word choice in songs. I would find myself struggling to express in song a particular situation that had happened, and I was being far too literal about everything. &lt;b&gt;&quot;Well, I can't use the word 'boardwalk' because it didn't happen there!&quot;&lt;/b&gt; The &lt;i&gt;realization&lt;/i&gt; that I could choose words that weren't literally significant while still retaining the initial thought was&lt;b&gt; just one more simple idea I had overlooked.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;These ideas have recently all come together for me in a more tangible way, as I've begun developing a style of writing that I'm quite fond of. I've been trying for some time to combine my &lt;b&gt;groove-oriented&lt;/b&gt; interests with the &lt;b&gt;electronic world&lt;/b&gt; that I've been experimenting in. I am definitely a fan of &lt;b&gt;bizarre electronic noise pieces&lt;/b&gt;, but I have always felt a desire to write things that a person &lt;i&gt;less familiar with that style&lt;/i&gt; might understand.&lt;/p&gt;&lt;p&gt;The beginnings of this combination came to light while I was working on what was meant to be a reggae/ska version of &lt;i&gt;Dizzy Gillespie's&lt;/i&gt; &lt;b&gt;Night In Tunisia&lt;/b&gt;. This track, which I unfortunately could not resist calling &lt;a href='http://bubblehouse.org/home/jams/i-and-i-in-tunisia'&gt;I-and-I In Tunisia&lt;/a&gt;, was intended to be a sort of &lt;b&gt;dub piece&lt;/b&gt;, but I was experiencing problems in establishing the drum track. Without a real drummer at my disposal, I had resorted to my old standby of assorted drum loops culled from a variety of royalty-free collections.&lt;/p&gt;&lt;p&gt;In my attempts to rectify the situation, I began experimenting with &lt;b&gt;Reason&lt;/b&gt; through &lt;b&gt;ReWire&lt;/b&gt;. I tried some various &lt;i&gt;electronic beats&lt;/i&gt;, and as my exploration deepened, I started seeing how &lt;b&gt;far out&lt;/b&gt; I could get and still finish the tune normally—I was hoping to maintain the jazz 'head tune' format, and still end with a couple of choruses.&lt;/p&gt;&lt;p&gt;Although I never really acknowledge a piece as being &lt;i&gt;finished&lt;/i&gt;, I was pretty happy with the results of &lt;b&gt;I-and-I In Tunisia&lt;/b&gt;. I continued to explore these concepts in a subsequent piece, &lt;a href='http://bubblehouse.org/music/interlude.mp3'&gt;interlude&lt;/a&gt;, which also features a &lt;i&gt;preliminary&lt;/i&gt; set of lyrics.&lt;/p&gt;&lt;p&gt;This was one of the first songs with lyrics that I've written in some time, but during the writing process I noticed myself using some lyrical tools I'd gleaned from the &lt;b&gt;&lt;i&gt;hip-hop&lt;/i&gt;&lt;/b&gt; acts I've been getting into lately. Although I certainly don't pretend to have the wordplay skills of the &lt;b&gt;Digable Planets&lt;/b&gt;, or &lt;b&gt;A Tribe Called Quest&lt;/b&gt;, I definitely attempted to employ simpler constructs like &lt;i&gt;alliteration&lt;/i&gt; and &lt;i&gt;assonance&lt;/i&gt;, as well as inner and partial rhymes.&lt;/p&gt;&lt;p&gt;I may not have succeeded completely at this task, but it was an important development that I was &lt;i&gt;consciously&lt;/i&gt; thinking about these things while I was writing. I remember once telling someone that as far as I was concerned, &lt;b&gt;lyrics happened by magic&lt;/b&gt;. I didn't have any real understanding of them, I just wrote them down as I thought up ways to finish a rhyme, and I was &lt;i&gt;glad to get anything&lt;/i&gt;.&lt;/p&gt;&lt;p&gt;Additionally, &lt;b&gt;interlude&lt;/b&gt; features one of the more successful &lt;i&gt;electronic breakdowns&lt;/i&gt; that I have attempted in a piece, as it transitions into the outro guitar solo. Unlike in &lt;b&gt;I-and-I In Tunisia&lt;/b&gt;, I disregard the original groove completely, except for a couple of bars of drums lead-into the &lt;b&gt;original groove&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;I'm less than thrilled with the current version of the guitar work in this piece, but I try not to get too hung up with that &lt;i&gt;particular element&lt;/i&gt;. I find it difficult to produce quality improvised guitar lines without a live band. This in itself may be a hang-up, but my intent is for this piece to grow with a live band (&lt;b&gt;which will be happening soon&lt;/b&gt;), so that element is not too &lt;i&gt;high&lt;/i&gt; on my priority list yet.&lt;/p&gt;&lt;p&gt;This was also the first piece I've completed (or nearly completed, as the case may be) on my new &lt;b&gt;Mac G5&lt;/b&gt;, which has already freed me of a lot of confines on its own. Like &lt;b&gt;Soundtrack&lt;/b&gt; and &lt;b&gt;Reason&lt;/b&gt;, a good recording rig allows a &lt;i&gt;composer&lt;/i&gt; to &lt;i&gt;explore&lt;/i&gt; so much &lt;i&gt;more&lt;/i&gt;, and the results even thus far have been well worth the cost. However, I have to say the process of learning various audio tools on a &lt;b&gt;&lt;i&gt;lesser system&lt;/i&gt;&lt;/b&gt; instilled in me a certain level of &lt;b&gt;efficiency&lt;/b&gt; that will allow me to put my rig to its best use.&lt;/p&gt;&lt;p&gt;The personal progress I've made over the last few years is really &lt;b&gt;&lt;i&gt;profound&lt;/i&gt;&lt;/b&gt; for me to look back on. Particularly when I first arrived at graduate school, I spent a huge amount of time &lt;b&gt;justifying my existence as a writer&lt;/b&gt;. Since my application process was so long, taking essentially three tries to be accepted to the program, by the time I finally got in I had developed a real &lt;i&gt;self-flaggelation complex&lt;/i&gt;. I really felt a need to prove to myself that I really could call myself a composer.&lt;/p&gt;&lt;p&gt;This was certainly daunting &lt;i&gt;emotionally&lt;/i&gt;, but it developed into a real work ethic that I hadn't experienced before. The individual discoveries were made more significant because I had spent so much time trying to find them. I had wanted to be able to write music for a long time, and by the time I realized I could,&lt;b&gt; I'd been already been writing for years&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;I think the best way for me to end this rambling piece of personal pseudo-analysis is with another quote from one of my greatest influences, &lt;b&gt;Frank Zappa&lt;/b&gt;:&lt;/p&gt;&lt;blockquote style='font: 18.0px Cochin'&gt;The most important thing in art is &lt;b&gt;The Frame&lt;/b&gt;. For painting, literally; for other arts, figuratively—because, without this humble appliance, you can't &lt;b&gt;know&lt;/b&gt; where &lt;i&gt;The Art&lt;/i&gt; stops and &lt;i&gt;The Real World&lt;/i&gt; begins.
 
 You have to put a 'box' around it because otherwise, &lt;b&gt;what is that shit on the wall?&lt;/b&gt;&lt;/blockquote&gt;</description>
-                <link>http://username.github.io/cmfudhm=/bxvzawm=/dhvuzxm=/2007/05/08/be-a-composer-in-three-easy-steps</link>
-                <guid>http://username.github.io/cmfudhm=/bxvzawm=/dhvuzxm=/2007/05/08/be-a-composer-in-three-easy-steps</guid>
+                <link>http://username.github.io/2007/05/08/be-a-composer-in-three-easy-steps</link>
+                <guid>http://username.github.io/2007/05/08/be-a-composer-in-three-easy-steps</guid>
                 <pubDate>2007-05-08T00:00:00-04:00</pubDate>
         </item>
 
@@ -758,8 +437,8 @@ You have to put a 'box' around it because otherwise, &lt;b&gt;what is that shit 
 &lt;h3 id=&quot;mod_python_331&quot;&gt;mod_python 3.3.1&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;./configure --with-apxs2=/usr/local/bin/apxs --with-python=/usr/local/bin/python2.4&lt;/code&gt;&lt;/pre&gt;</description>
-                <link>http://username.github.io/y29kaw5n/yxbhy2hl/dw5pea==/y29tcglsaw5n/2007/05/01/notes-on-mod_python-and-apache-2-2-on-mac-os-x</link>
-                <guid>http://username.github.io/y29kaw5n/yxbhy2hl/dw5pea==/y29tcglsaw5n/2007/05/01/notes-on-mod_python-and-apache-2-2-on-mac-os-x</guid>
+                <link>http://username.github.io/2007/05/01/notes-on-mod_python-and-apache-2-2-on-mac-os-x</link>
+                <guid>http://username.github.io/2007/05/01/notes-on-mod_python-and-apache-2-2-on-mac-os-x</guid>
                 <pubDate>2007-05-01T00:00:00-04:00</pubDate>
         </item>
 
@@ -798,8 +477,8 @@ You have to put a 'box' around it because otherwise, &lt;b&gt;what is that shit 
 &lt;p&gt;Jacob Fred Jazz Odyssey – Sullivan Hall – New York, NY – 2008/06/20&lt;/p&gt;
 
 &lt;p&gt;Tarantula – The Egg – Albany, NY – 2005/02/25 Vida Blue – State Theater – Ithaca, NY – 2002/04/21 The Other Ones – Civic Center – Syracuse, NY – 2000/09/12 Ziggy Marley – Civic Center – Syracuse, NY – 2000/09/12 John Medeski and Bob Moses – The Stone – New York, NY – 2006/09/19 Manbreak – SPAC – Saratoga Springs, NY Live – SPAC – Saratoga Springs, NY Counting Crows – SPAC – Saratoga Springs, NY – 1997/07/27 The Wallflowers – SPAC – Saratoga Springs, NY – 1997/07/27 HORDE Festival – SPAC – Saratoga Springs, NY – 1996 Dave Matthews and Tim Reynolds – Stanley Theater – Utica, NY – 1996 HORDE Festival – SPAC – Saratoga Springs, NY – 1997/08/10 Smashing Pumpkins – Knickerbocker Arena – Albany, NY – 1996 Garbage – Knickerbocker Arena – Albany, NY – 1996 B.B. King – Stanley Theater – Utica, NY – 2005/04/07 Ben Folds – SPAC – Saratoga Springs, NY – 1998/06/06 Beck – SPAC – Saratoga Springs, NY – 1998/06/06 The Dead – SPAC – Saratoga Springs, NY – 2006/07/02 GRAB – SPAC – Saratoga Springs, NY – 2006/07/02 Reel Big Fish – Hewitt Union – Oswego, NY Springheeled Jack USA – Hewitt Union – Oswego, NY They Might Be Giants – Hewitt Union – Oswego, NY – 1997/11/23 Lincoln – Hewitt Union – Oswego, NY – 1997/11/23 Benevento-Russo Duo – Tribeca Rock Club – New York, NY Mike Doughty – Randall’s Island – New York, NY Oysterhead – Utica Coliseum – Utica, NY – 2001/11/09 Lake Trout – Utica Coliseum – Utica, NY – 2001/11/09 Grassroots Festival – 1997 Charlie Hunter Trio – Waterman Theater – Oswego, NY Son Seals – Camp Oswego – Oswego, NY – 1999/07/17-18 The Slip – Camp Oswego – Oswego, NY – 1999/07/17-18 Ozomatli – Camp Oswego – Oswego, NY – 1999/07/17-18&lt;/p&gt;</description>
-                <link>http://username.github.io/bxvzawm=/2007/05/01/concerts-i-have-seen</link>
-                <guid>http://username.github.io/bxvzawm=/2007/05/01/concerts-i-have-seen</guid>
+                <link>http://username.github.io/2007/05/01/concerts-i-have-seen</link>
+                <guid>http://username.github.io/2007/05/01/concerts-i-have-seen</guid>
                 <pubDate>2007-05-01T00:00:00-04:00</pubDate>
         </item>
 
@@ -1089,16 +768,16 @@ E----------------------------------------------------&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;When practicing technique-oriented material, it can be helpful to drop your theoretical guard and focus on the visual aspects of playing. This comes naturally to many guitarists, but it’s easy to get distracted or bored with the repetition of drilling.&lt;/p&gt;
 
 &lt;p&gt;Finding arbitrary permutations of sample patterns is a good way to feel constructive in your practicing, as many of these patterns can find their way into your regular improvisation.&lt;/p&gt;</description>
-                <link>http://username.github.io/bxvzawm=/z3vpdgfy/bgvzc29ucw==/2007/02/19/pattern-based-drilling</link>
-                <guid>http://username.github.io/bxvzawm=/z3vpdgfy/bgvzc29ucw==/2007/02/19/pattern-based-drilling</guid>
+                <link>http://username.github.io/2007/02/19/pattern-based-drilling</link>
+                <guid>http://username.github.io/2007/02/19/pattern-based-drilling</guid>
                 <pubDate>2007-02-19T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>japh</title>
                 <description>&lt;p&gt;&lt;span style='font-family:courier;font-size:9;'&gt;#!/usr/bin/perl @x=(0x50,-82,0xd,-3,-12,0x5,0x1,0xd,0x41,-84,0x1, -2,0x2b,0x4a);$Z=sub{for($z=@_;$z;$z–){unshift( @z,chr($_[$z]+$z{z}));$z{z}+=$_[$z];}while($z=pop (@z)){print($z);}};$z=$Z;@Z=(0xd,-6,0x8,0x2);$Z-&amp;gt; ((0,0,0,-68,@Z,-7,0x48,-76,-6,0xd,-11,@x));&lt;/span&gt;&lt;/p&gt;</description>
-                <link>http://username.github.io/y29kaw5n/cgvyba==/cmvmbgv4aw9ucw==/2007/02/17/japh</link>
-                <guid>http://username.github.io/y29kaw5n/cgvyba==/cmvmbgv4aw9ucw==/2007/02/17/japh</guid>
+                <link>http://username.github.io/2007/02/17/japh</link>
+                <guid>http://username.github.io/2007/02/17/japh</guid>
                 <pubDate>2007-02-17T00:00:00-05:00</pubDate>
         </item>
 
@@ -1112,8 +791,8 @@ Ernie Ball VP Jr., Voodoo Labs Pedal Power 2+, Dunlop Crybaby, Sovtek Big Muff P
 &lt;h3&gt;Bottom Row:&lt;/h3&gt;
 Boss Loopstation XL-20, Boss Digital Delay DD-3, Analogman King of Tone, Analogman Bi-Comprossor, Boss Octave OC-3
 &lt;/p&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/z3vpdgfy/2006/12/08/pedals-and-pedals-and-pedals</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/z3vpdgfy/2006/12/08/pedals-and-pedals-and-pedals</guid>
+                <link>http://username.github.io/2006/12/08/pedals-and-pedals-and-pedals</link>
+                <guid>http://username.github.io/2006/12/08/pedals-and-pedals-and-pedals</guid>
                 <pubDate>2006-12-08T00:00:00-05:00</pubDate>
         </item>
 
@@ -1124,8 +803,8 @@ Boss Loopstation XL-20, Boss Digital Delay DD-3, Analogman King of Tone, Analogm
 &lt;p&gt;&lt;img src='http://bubblehouse.org/home/?q=system/files/12-07-06_0032.jpg' /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src='http://bubblehouse.org/home/?q=system/files/12-07-06_0033.jpg' /&gt;&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/c2fk/2006/12/07/my-fridge</link>
-                <guid>http://username.github.io/cmfudhm=/c2fk/2006/12/07/my-fridge</guid>
+                <link>http://username.github.io/2006/12/07/my-fridge</link>
+                <guid>http://username.github.io/2006/12/07/my-fridge</guid>
                 <pubDate>2006-12-07T00:00:00-05:00</pubDate>
         </item>
 
@@ -1136,16 +815,16 @@ Boss Loopstation XL-20, Boss Digital Delay DD-3, Analogman King of Tone, Analogm
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;small&gt;(emphasis mine)&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;I couldn't help but giggle a little bit.&lt;/p&gt;</description>
-                <link>http://username.github.io/bxvzawm=/cmv2awv3cw==/2006/12/06/new-york-theatre-review-insideout</link>
-                <guid>http://username.github.io/bxvzawm=/cmv2awv3cw==/2006/12/06/new-york-theatre-review-insideout</guid>
+                <link>http://username.github.io/2006/12/06/new-york-theatre-review-insideout</link>
+                <guid>http://username.github.io/2006/12/06/new-york-theatre-review-insideout</guid>
                 <pubDate>2006-12-06T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>the light in my room was too bright</title>
                 <description>&lt;p&gt;so i made a lampshade for it… &lt;!--break--&gt; &lt;a href='http://bubblehouse.org/home/system/files/sconce.jpg'&gt;&lt;img alt='lampshade' border='0' src='http://bubblehouse.org/home/system/files/sconce.jpg' /&gt;&lt;/a&gt;&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/2006/08/25/the-light-in-my-room-was-too-bright</link>
-                <guid>http://username.github.io/cmfudhm=/2006/08/25/the-light-in-my-room-was-too-bright</guid>
+                <link>http://username.github.io/2006/08/25/the-light-in-my-room-was-too-bright</link>
+                <guid>http://username.github.io/2006/08/25/the-light-in-my-room-was-too-bright</guid>
                 <pubDate>2006-08-25T00:00:00-04:00</pubDate>
         </item>
 
@@ -1155,8 +834,8 @@ Boss Loopstation XL-20, Boss Digital Delay DD-3, Analogman King of Tone, Analogm
 &lt;p&gt;&lt;code&gt;$now = time(); $beginning&lt;em&gt;of&lt;/em&gt;day = $now - ($now % 86400);
 &lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;this works for me because i definitely remember that number for seconds in a day, and avoids any locale-dependent variations. plus, end of day becomes just as easy.&lt;/p&gt;</description>
-                <link>http://username.github.io/y29kaw5n/cghw/cmvmbgv4aw9ucw==/2006/08/01/beginning-of-day-timestamps</link>
-                <guid>http://username.github.io/y29kaw5n/cghw/cmvmbgv4aw9ucw==/2006/08/01/beginning-of-day-timestamps</guid>
+                <link>http://username.github.io/2006/08/01/beginning-of-day-timestamps</link>
+                <guid>http://username.github.io/2006/08/01/beginning-of-day-timestamps</guid>
                 <pubDate>2006-08-01T00:00:00-04:00</pubDate>
         </item>
 
@@ -1167,8 +846,8 @@ Boss Loopstation XL-20, Boss Digital Delay DD-3, Analogman King of Tone, Analogm
 &lt;li&gt;&lt;a href='http://www.youtube.com/watch?v=g5X7ztdd_6E&amp;amp;NR'&gt;old macdonald had a spaceship&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href='http://www.youtube.com/watch?v=uriYIMa35Hg'&gt;meet the computer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://username.github.io/zxnvdgvyawnh/2006/07/27/yipyipyipyipyipyipyipyip-uh-huh-uh-huh</link>
-                <guid>http://username.github.io/zxnvdgvyawnh/2006/07/27/yipyipyipyipyipyipyipyip-uh-huh-uh-huh</guid>
+                <link>http://username.github.io/2006/07/27/yipyipyipyipyipyipyipyip-uh-huh-uh-huh</link>
+                <guid>http://username.github.io/2006/07/27/yipyipyipyipyipyipyipyip-uh-huh-uh-huh</guid>
                 <pubDate>2006-07-27T00:00:00-04:00</pubDate>
         </item>
 
@@ -1203,76 +882,76 @@ Boss Loopstation XL-20, Boss Digital Delay DD-3, Analogman King of Tone, Analogm
 &lt;p&gt;&lt;small&gt;References:&lt;/small&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href='http://en.wikipedia.org/wiki/Diminished_scale'&gt;http://en.wikipedia.org/wiki/Diminished_scale&lt;/a&gt;&lt;/p&gt;</description>
-                <link>http://username.github.io/bxvzawm=/z3vpdgfy/bgvzc29ucw==/2006/07/18/working-with-the-diminished-scale</link>
-                <guid>http://username.github.io/bxvzawm=/z3vpdgfy/bgvzc29ucw==/2006/07/18/working-with-the-diminished-scale</guid>
+                <link>http://username.github.io/2006/07/18/working-with-the-diminished-scale</link>
+                <guid>http://username.github.io/2006/07/18/working-with-the-diminished-scale</guid>
                 <pubDate>2006-07-18T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>warts and all</title>
                 <description>&lt;p&gt;In the beginning of April, I got some friends and cohorts together to record a live ep, consisting of some of my &amp;#8220;classics&amp;#8221;. following a delusional miles davis complex, i decided not to give the players anything to listen to of the tracks we were about to record, so they only had one rehearsal before the big day.&lt;/p&gt;&lt;p&gt;i specifically wanted something filled with &amp;#8220;the human element&amp;#8221;, and i got exactly that. this was kind of my response to the sterilized studio environment at suny purchase, and i was very happy with the results&amp;#8230;&lt;/p&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/01_ghetto_queen.mp3'&gt;&lt;i&gt;ghetto queen&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/02_pathways.mp3'&gt;&lt;i&gt;pathways&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/03_who_stepped_on_dizs_horn.mp3'&gt;&lt;i&gt;who stepped on diz&amp;#8217;s horn&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Wilson)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/04_harvest.mp3'&gt;&lt;i&gt;harvest&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/pcb/ep/05_if_i_could_see.mp3'&gt;&lt;i&gt;if i could see&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/01_ghetto_queen.mp3'&gt;&lt;i&gt;ghetto queen&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/02_pathways.mp3'&gt;&lt;i&gt;pathways&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/03_who_stepped_on_dizs_horn.mp3'&gt;&lt;i&gt;who stepped on diz&amp;#8217;s horn&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Wilson)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/04_harvest.mp3'&gt;&lt;i&gt;harvest&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pcb/ep/05_if_i_could_see.mp3'&gt;&lt;i&gt;if i could see&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;p&gt;The players on this session were:&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt; &lt;b&gt;Matt Wilson&lt;/b&gt;, bass, co-author &lt;i&gt;who stepped on diz&amp;#8217;s horn&lt;/i&gt;&lt;/li&gt;
 &lt;li&gt; &lt;b&gt;Josh Ballard&lt;/b&gt;, piano/organ&lt;/li&gt;
 &lt;li&gt; &lt;b&gt;Rory Merola&lt;/b&gt;, drums&lt;/li&gt;
 &lt;li&gt; &lt;b&gt;Mike Spivack&lt;/b&gt;, engineering, production assistance&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2005/05/23/warts-and-all</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2005/05/23/warts-and-all</guid>
+                <link>http://username.github.io/2005/05/23/warts-and-all</link>
+                <guid>http://username.github.io/2005/05/23/warts-and-all</guid>
                 <pubDate>2005-05-23T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>diary of a madman</title>
                 <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href='/cgi-bin/download.cgi/diary_of_a_madman.mp3'&gt;diary of a madman&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/diary_of_a_madman.mp3'&gt;diary of a madman&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2005/03/03/diary-of-a-madman</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2005/03/03/diary-of-a-madman</guid>
+                <link>http://username.github.io/2005/03/03/diary-of-a-madman</link>
+                <guid>http://username.github.io/2005/03/03/diary-of-a-madman</guid>
                 <pubDate>2005-03-03T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>higher than you</title>
                 <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href='/cgi-bin/download.cgi/higher_than_you.mp3'&gt;higher than you&lt;/a&gt; &lt;small&gt;&lt;i&gt;(christensen)&lt;/i&gt;&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/higher_than_you.mp3'&gt;higher than you&lt;/a&gt; &lt;small&gt;&lt;i&gt;(christensen)&lt;/i&gt;&lt;/small&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2005/02/20/higher-than-you</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2005/02/20/higher-than-you</guid>
+                <link>http://username.github.io/2005/02/20/higher-than-you</link>
+                <guid>http://username.github.io/2005/02/20/higher-than-you</guid>
                 <pubDate>2005-02-20T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>the only sure things in life are death and spammers</title>
                 <description>&lt;p&gt;just when i was sure i was out, they pulled me back in!!!&lt;/p&gt;&lt;p&gt;lately my exposure to spam has been relatively low. since i got spamassassin working to it&amp;#8217;s fullest by utilizing the &lt;a href='http://razor.sourceforge.net/'&gt;razor db&lt;/a&gt;, the amount of false negatives i&amp;#8217;ve gotten is damn close to zero. i can&amp;#8217;t remember the last time a spam e-mail got through to my inbox.&lt;/p&gt;&lt;p&gt;also, awhile ago i realized that &lt;a href='http://bubblehouse.org/archives/000057.shtml'&gt;spammers were the only ones submitting comments on my blog&lt;/a&gt;, which led me to start using &lt;a href='http://james.seng.sg'&gt;James Seng&amp;#8217;s&lt;/a&gt; SCode.pm for generating CAPTCHAs, which stopped the problem for the most part. I was still getting spammed manually, though.&lt;/p&gt;&lt;p&gt;however, today i became aware of two other ways those smarmy bastards were getting through. first, i realized that my referrer logs were full to the brim with URLs like http://texas-hold-em.online-deals-4u.info/&amp;#8230;. a &lt;a href='http://it.slashdot.org/article.pl?sid=05/02/01/1519211&amp;amp;tid=111&amp;amp;tid=95&amp;amp;tid=4'&gt;slashdot article&lt;/a&gt; proved informative in fixing this issue.&lt;/p&gt;&lt;p&gt;and finally, i realized that the once pristine TrackBack mechanism was also getting spammed, leading me to turn off that feature throughout my site. apparently, though, Mr. Seng also has &lt;a href='http://james.seng.sg/archives/2005/02/04/solution_to_trackback_spams.html'&gt;a solution to this&lt;/a&gt;, which i hope to implement soon&amp;#8230;&lt;/p&gt;&lt;p&gt;as a sidenote, while preparing this entry, i came upon some information about &lt;a href='http://www.drupal.org/'&gt;Drupal&lt;/a&gt;, an open-source content management platform. it looks kinda nice, and i&amp;#8217;ve been thinking about freeing myself from Six Apart&amp;#8217;s moveabletype software&amp;#8230;it will be interesting to see what&amp;#8217;s involved in making the switch&amp;#8230;&lt;/p&gt;&lt;p&gt;EDIT: for the moment, i&amp;#8217;ve started using tom sherman&amp;#8217;s &lt;a href='http://underscorebleach.net/content/jotsheet/2005/02/prevent_movable_type_trackback_spam'&gt;solution to trackback spam&lt;/a&gt;, and it seems to be doing the job&amp;#8230;.i&amp;#8217;m still looking at drupal, though&amp;#8230;&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/2005/02/04/the-only-sure-things-in-life-are-death-and-spammers</link>
-                <guid>http://username.github.io/cmfudhm=/2005/02/04/the-only-sure-things-in-life-are-death-and-spammers</guid>
+                <link>http://username.github.io/2005/02/04/the-only-sure-things-in-life-are-death-and-spammers</link>
+                <guid>http://username.github.io/2005/02/04/the-only-sure-things-in-life-are-death-and-spammers</guid>
                 <pubDate>2005-02-04T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>new stuff, and junk</title>
                 <description>&lt;p&gt;here&amp;#8217;s a couple of tunes in the usual semi-finished demo state&amp;#8230;&lt;/p&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/lost.mp3'&gt;&lt;i&gt;lost&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/miss_direction.mp3'&gt;&lt;i&gt;miss direction&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/lost.mp3'&gt;&lt;i&gt;lost&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/miss_direction.mp3'&gt;&lt;i&gt;miss direction&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;p&gt;and here&amp;#8217;s a bunch of junk&amp;#8230;including the rough cut of a reggae version of Slayer&amp;#8217;s &amp;#8220;Raining Blood&amp;#8221; that we&amp;#8217;re working on in one of my studio practicum classes.&lt;/p&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/raining_dub_rough_track.mp3'&gt;&lt;i&gt;raining dub&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/zuperphunk.mp3'&gt;&lt;i&gt;zuperphunk&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/walking_groove.mp3'&gt;&lt;i&gt;walking groove&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/smell_the_capital.mp3'&gt;&lt;i&gt;smell the capital&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/pfunk_garbage.mp3'&gt;&lt;i&gt;pfunk garbage&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/desert_groove.mp3'&gt;&lt;i&gt;desert groove&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/crazy_bitch.mp3'&gt;&lt;i&gt;crazy bitch&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/i_wear_my_shame_like_a_wet_towel.mp3'&gt;&lt;i&gt;i wear my shame like a wet towel&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href='http://bubblehouse.org/cgi-bin/download.cgi/funkeee.mp3'&gt;&lt;i&gt;funkeee&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/raining_dub_rough_track.mp3'&gt;&lt;i&gt;raining dub&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/zuperphunk.mp3'&gt;&lt;i&gt;zuperphunk&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/walking_groove.mp3'&gt;&lt;i&gt;walking groove&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/smell_the_capital.mp3'&gt;&lt;i&gt;smell the capital&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pfunk_garbage.mp3'&gt;&lt;i&gt;pfunk garbage&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/desert_groove.mp3'&gt;&lt;i&gt;desert groove&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/crazy_bitch.mp3'&gt;&lt;i&gt;crazy bitch&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/i_wear_my_shame_like_a_wet_towel.mp3'&gt;&lt;i&gt;i wear my shame like a wet towel&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/funkeee.mp3'&gt;&lt;i&gt;funkeee&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2005/02/01/new-stuff-and-junk</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2005/02/01/new-stuff-and-junk</guid>
+                <link>http://username.github.io/2005/02/01/new-stuff-and-junk</link>
+                <guid>http://username.github.io/2005/02/01/new-stuff-and-junk</guid>
                 <pubDate>2005-02-01T00:00:00-05:00</pubDate>
         </item>
 
@@ -1293,20 +972,20 @@ categories:
         <item>
                 <title>freak out!</title>
                 <description>&lt;ol&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/clusterfuck.mp3'&gt;&lt;i&gt;clusterfuck&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/moogindigo.mp3'&gt;&lt;i&gt;moog indigo&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/inc.mp3'&gt;&lt;i&gt;in c&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Riley)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/clusterfuck.mp3'&gt;&lt;i&gt;clusterfuck&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/moogindigo.mp3'&gt;&lt;i&gt;moog indigo&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/inc.mp3'&gt;&lt;i&gt;in c&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Riley)&lt;/small&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2004/10/25/freak-out</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2004/10/25/freak-out</guid>
+                <link>http://username.github.io/2004/10/25/freak-out</link>
+                <guid>http://username.github.io/2004/10/25/freak-out</guid>
                 <pubDate>2004-10-25T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>new shit</title>
                 <description>&lt;p&gt;&amp;#8220;wondershank&amp;#8221; is probably too high for me to sing properly, but you get the idea&amp;#8230;&lt;/p&gt;&lt;OL&gt;
-&lt;LI&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/wondershank.mp3'&gt;&lt;i&gt;wondershank&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/LI&gt;
-&lt;LI&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/ificouldsee.mp3'&gt;&lt;i&gt;if i could see&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/LI&gt;
+&lt;LI&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/wondershank.mp3'&gt;&lt;i&gt;wondershank&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/LI&gt;
+&lt;LI&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/ificouldsee.mp3'&gt;&lt;i&gt;if i could see&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/LI&gt;
 &lt;/OL&gt;&lt;pre&gt;
 wondershank
 
@@ -1356,15 +1035,15 @@ and tell my friends i didn't really care
 we always hurt the ones we cherish
 so why am i the one who has an ego to repair?
 &lt;/pre&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2004/10/21/new-shit</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2004/10/21/new-shit</guid>
+                <link>http://username.github.io/2004/10/21/new-shit</link>
+                <guid>http://username.github.io/2004/10/21/new-shit</guid>
                 <pubDate>2004-10-21T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>something new</title>
                 <description>&lt;p&gt;so, now that i&amp;#8217;m formally studying again at suny purchase, i have lots more time to write, so hopefully i&amp;#8217;ll be able to update more often. this is a new tune that i&amp;#8217;m pretty happy with, although the track itself is kind of overproduced.&lt;/p&gt;&lt;OL&gt;
-&lt;LI&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/icuffedyouadeliciousbass.mp3'&gt;&lt;i&gt;i cuffed you a delicious bass&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/LI&gt;
+&lt;LI&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/icuffedyouadeliciousbass.mp3'&gt;&lt;i&gt;i cuffed you a delicious bass&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/LI&gt;
 &lt;/OL&gt;&lt;pre&gt;
 when i first saw your face, it was blurry and late
 but i had a feeling that we would meet again
@@ -1403,8 +1082,8 @@ right on time
 
 -chorus-
 &lt;/pre&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2004/09/24/something-new</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2004/09/24/something-new</guid>
+                <link>http://username.github.io/2004/09/24/something-new</link>
+                <guid>http://username.github.io/2004/09/24/something-new</guid>
                 <pubDate>2004-09-24T00:00:00-04:00</pubDate>
         </item>
 
@@ -1425,17 +1104,17 @@ it is because&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;but fortunately for you,&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;em&gt;THAT doesn’t mean SHIT&lt;/em&gt;&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/2004/09/24/a-thought</link>
-                <guid>http://username.github.io/cmfudhm=/2004/09/24/a-thought</guid>
+                <link>http://username.github.io/2004/09/24/a-thought</link>
+                <guid>http://username.github.io/2004/09/24/a-thought</guid>
                 <pubDate>2004-09-24T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>studio ear</title>
                 <description>&lt;p&gt;as i understand it, there is a semi-legitimate condition called, &amp;#8220;studio ear.&amp;#8221; basically, when you&amp;#8217;ve recorded and re-recorded a tune approximately 3 billion times, you start listening to and nitpicking every little thing. that definitely happened with the first two tunes i&amp;#8217;m posting today. i&amp;#8217;ve been working on these tunes for a couple of years, and they&amp;#8217;ve gone through several incarnations. i decided to post them because, especially in the case of &lt;i&gt;pathways&lt;/i&gt;, i&amp;#8217;m getting pretty sick of playing them.&lt;/p&gt;&lt;OL&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/pathways.mp3'&gt;&lt;i&gt;pathways&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/ghettoqueen.mp3'&gt;&lt;i&gt;ghetto queen&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/ScatteredThoughts.mp3'&gt;&lt;i&gt;scattered thoughts&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pathways.mp3'&gt;&lt;i&gt;pathways&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/ghettoqueen.mp3'&gt;&lt;i&gt;ghetto queen&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/ScatteredThoughts.mp3'&gt;&lt;i&gt;scattered thoughts&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
 &lt;/OL&gt;&lt;p&gt;The third tune listed is a piano piece i wrote. it&amp;#8217;s probably going to end up split into two parts, to be played by two pianos. of course, finding &lt;span style='text-transform: none'&gt;Serious Pianists&amp;trade;&lt;/span&gt; that would want to play them is another issue altogether. ;-)&lt;/p&gt;&lt;pre&gt;
 She's got the funk that keeps me sleepless every single night
 The way she talks, the way she walks, it's something I can't fight
@@ -1452,8 +1131,8 @@ Since the time I stood with her and gave my heart away
 I'll turn off all emotion, become like a cold machine
 Just one more loss, but what a cost to the Ghetto Queen
 &lt;/pre&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2004/02/15/studio-ear</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2004/02/15/studio-ear</guid>
+                <link>http://username.github.io/2004/02/15/studio-ear</link>
+                <guid>http://username.github.io/2004/02/15/studio-ear</guid>
                 <pubDate>2004-02-15T00:00:00-05:00</pubDate>
         </item>
 
@@ -1488,21 +1167,21 @@ anyways, that&amp;amp;#8217;s about as much as i can tell you, for now. i&amp;am
 anyways, lots of luck! feel free to email me with any questions you might have, i&amp;amp;#8217;ll try to help you out whenever possible&amp;amp;#8230;
 
 -phil&lt;/code&gt;&lt;/pre&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2004/02/13/some-info</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2004/02/13/some-info</guid>
+                <link>http://username.github.io/2004/02/13/some-info</link>
+                <guid>http://username.github.io/2004/02/13/some-info</guid>
                 <pubDate>2004-02-13T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>old stuff...</title>
                 <description>&lt;p&gt;i thought it might be nice to put up some really rough original drafts of some tunes that i&amp;#8217;ve done. most of these particular ones i haven&amp;#8217;t even recorded legitimately yet.&lt;/p&gt;&lt;p&gt;some of them are particularly hilarious because they feature larry&amp;#8217;s unique vocal stylings. sometimes i really think he&amp;#8217;s more suited to being a rock star than i am&amp;#8230;now if i could just get him to play an instrument&amp;#8230; ;-)&lt;/p&gt;&lt;OL&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/LotTrash.mp3'&gt;&lt;i&gt;lot trash&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/Man-Tears.mp3'&gt;&lt;i&gt;man tears&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/HarvestFriend.mp3'&gt;&lt;i&gt;harvest friend&lt;/i&gt;&lt;/A&gt; (aka &lt;i&gt;harvest&lt;/i&gt;)&lt;small&gt; (Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/Volcano.mp3'&gt;&lt;i&gt;Volcano&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/LotTrash.mp3'&gt;&lt;i&gt;lot trash&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/Man-Tears.mp3'&gt;&lt;i&gt;man tears&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/HarvestFriend.mp3'&gt;&lt;i&gt;harvest friend&lt;/i&gt;&lt;/A&gt; (aka &lt;i&gt;harvest&lt;/i&gt;)&lt;small&gt; (Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/Volcano.mp3'&gt;&lt;i&gt;Volcano&lt;/i&gt;&lt;/A&gt;&lt;small&gt; (Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
 &lt;/OL&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2004/02/01/old-stuff</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2004/02/01/old-stuff</guid>
+                <link>http://username.github.io/2004/02/01/old-stuff</link>
+                <guid>http://username.github.io/2004/02/01/old-stuff</guid>
                 <pubDate>2004-02-01T00:00:00-05:00</pubDate>
         </item>
 
@@ -1534,8 +1213,8 @@ lick at him.
        where are my chili boots?
 &lt;/pre&gt;
 &lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/2004/01/16/the-weblog-formerly-known-as</link>
-                <guid>http://username.github.io/cmfudhm=/2004/01/16/the-weblog-formerly-known-as</guid>
+                <link>http://username.github.io/2004/01/16/the-weblog-formerly-known-as</link>
+                <guid>http://username.github.io/2004/01/16/the-weblog-formerly-known-as</guid>
                 <pubDate>2004-01-16T00:00:00-05:00</pubDate>
         </item>
 
@@ -1546,8 +1225,8 @@ lick at him.
 &lt;p&gt;when i added that emblem at the top, i got thinking about how i had never written a game of life program. this is one of those standard things all computer science students do at one point or another, but since i didn’t want to do things the standard way and had to drop my CS major, I never did.&lt;/p&gt;
 
 &lt;p&gt;so, anyways, &lt;a href='http://bubblehouse.org/sandbox/Life/'&gt;check it out&lt;/a&gt;….&lt;/p&gt;</description>
-                <link>http://username.github.io/y29kaw5n/amf2yq==/2004/01/16/the-game-of-life</link>
-                <guid>http://username.github.io/y29kaw5n/amf2yq==/2004/01/16/the-game-of-life</guid>
+                <link>http://username.github.io/2004/01/16/the-game-of-life</link>
+                <guid>http://username.github.io/2004/01/16/the-game-of-life</guid>
                 <pubDate>2004-01-16T00:00:00-05:00</pubDate>
         </item>
 
@@ -1562,15 +1241,15 @@ lick at him.
 &lt;p&gt;oh, and this is for my use only. it’s not going to be publicly posted, since things like that have a pretty large capacity for abuse. and if you do in fact want to leave your email address, you have my word that it won’t be resold or anything like that.&lt;/p&gt;
 
 &lt;p&gt;so, if you would like to take the time to fill the form out, that’d be great, but if you have the same issues about them that i do, i understand. anyways, thanks for your time.&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/bxvzawm=/2004/01/15/the-privacy-monsters</link>
-                <guid>http://username.github.io/cmfudhm=/bxvzawm=/2004/01/15/the-privacy-monsters</guid>
+                <link>http://username.github.io/2004/01/15/the-privacy-monsters</link>
+                <guid>http://username.github.io/2004/01/15/the-privacy-monsters</guid>
                 <pubDate>2004-01-15T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>vocal tracking is hard</title>
                 <description>&lt;p&gt;i&amp;#8217;ve been trying to work on more tunes with vocal tracks, as vocals seem to be pretty much the hardest kind of &amp;#8220;instrument&amp;#8221; to record. then there&amp;#8217;s also the additional fact that while i don&amp;#8217;t &lt;i&gt;hate&lt;/i&gt; the sound of my own voice, i definitely feel uncomfortable listening to it. this is something i need to get over, and i guess there&amp;#8217;s only one way to do it.&lt;/p&gt;&lt;p&gt;I got a lot of help on this matter from the &lt;A href='http://www.tweakheadz.com/how_to_record_vocals.htm'&gt;TweakHeadz&lt;/A&gt; site. There&amp;#8217;s all kinds of good stuff on that site.&lt;/p&gt;&lt;p&gt;anyways, this tune is another one &lt;a href='http://www.livejournal.com/users/bataille'&gt;larry hovish&lt;/a&gt; and i collaborated on. we kinda were going for an alt-rock kind of feel, which i believe we suceeded in. furthermore, my solo in this tune has a nice crappy-neil-young quality to it. okay, that was not intentional, i was just sick of protools, and i didn&amp;#8217;t feel like doing it over again.&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;A href='http://bubblehouse.org/cgi-bin/download.cgi/ghosttrain.mp3'&gt;&lt;i&gt;Ghost Train&lt;/i&gt;&lt;/A&gt;&lt;/li&gt;
+&lt;li&gt;&lt;A href='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/ghosttrain.mp3'&gt;&lt;i&gt;Ghost Train&lt;/i&gt;&lt;/A&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;pre&gt;
 On a ghost train to chicago
 Smoke billows through the air
@@ -1597,8 +1276,8 @@ Smoke billows through the air
 The only light that's seen at night
 Comes from over here
 &lt;/pre&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2003/12/27/vocal-tracking-is-hard</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2003/12/27/vocal-tracking-is-hard</guid>
+                <link>http://username.github.io/2003/12/27/vocal-tracking-is-hard</link>
+                <guid>http://username.github.io/2003/12/27/vocal-tracking-is-hard</guid>
                 <pubDate>2003-12-27T00:00:00-05:00</pubDate>
         </item>
 
@@ -1611,8 +1290,8 @@ Comes from over here
 &lt;p&gt;anyways, i hope to have a newly mastered version of it up in a day or two&lt;/p&gt;
 
 &lt;p&gt;UPDATE: man, i never did that, did i? oh well&lt;/p&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2003/12/26/mastering-issues</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2003/12/26/mastering-issues</guid>
+                <link>http://username.github.io/2003/12/26/mastering-issues</link>
+                <guid>http://username.github.io/2003/12/26/mastering-issues</guid>
                 <pubDate>2003-12-26T00:00:00-05:00</pubDate>
         </item>
 
@@ -1628,8 +1307,8 @@ Comes from over here
 &lt;LI&gt;Build System - building and installation of client and server packages&lt;/LI&gt;
 &lt;/UL&gt;&lt;h3&gt;Licenses&lt;/h3&gt;&lt;p&gt;After much hemming and hawing, I&amp;#8217;ve decided to license InnerSpace under the &lt;A HREF='http://www.gnu.org/licenses/gpl.html'&gt;GNU Public License&lt;/A&gt;. There&amp;#8217;s been a lot of talk around the GPL lately, what with &lt;A href='http://www.sco.com'&gt;SCO Group&lt;/A&gt;&amp;#8217;s &lt;A HREF='http://slashdot.org/search.pl?topic=88'&gt;relentless lawsuits and subpoenas&lt;/A&gt;, and a number of groklaw pundits have convinced me, at least, that the GPL is a viable extension of copyright law. I&amp;#8217;m not one of those people that&amp;#8217;s super concerned about this kind of stuff usually, but I&amp;#8217;ve been working on this project for a long time.&lt;/p&gt;&lt;h3&gt;Parser&lt;/h3&gt;&lt;p&gt;I&amp;#8217;ve revamped the parser, and it&amp;#8217;s a hundred times better. Previously, all sentences/commands had to be of the (BNF) form:&lt;/p&gt;&lt;p&gt;&lt;tt&gt;verb[[ object-specifier] direct-object[ preposition[ object-specifier] object-of-the-preposition]]&lt;/tt&gt;&lt;/p&gt;&lt;p&gt;This sucked for a couple of reasons. In addition to the actual style of the sentences being rather limited, you were also limited to one preposition-object pair. The new parser form is:&lt;/p&gt;&lt;p&gt;&lt;tt&gt;verb[[[ object-specifier] direct-object]+[ preposition[ object-specifier] object-of-the-preposition]*]&lt;/tt&gt;&lt;/p&gt;&lt;p&gt;I might be mixing up my BNF with RegEx, but basically what this comes down to is that you can now write verbs that support multiple preposition-object pairs (&amp;#8220;take the coal from the fire with the tongs&amp;#8221;), as well as skipping the direct object entirely (&amp;#8220;look at phil&amp;#8221;).&lt;/p&gt;&lt;h3&gt;Verbs&lt;/h3&gt;&lt;p&gt;The changes in the parser required some changes at the verb level, but they are few, and add some nice time-saving elements to verb authors.&lt;/p&gt;&lt;p&gt;First of all, the &amp;#8220;vargs&amp;#8221; verb attribute will be going away soon, though it was never really used anyways. The code editor on the client will also no longer present those fields as options (additionally, I&amp;#8217;ve borrowed the jEdit text pane, which was placed into the public domain, to use inside the verb editor. It&amp;#8217;s a big improvement).&lt;/p&gt;&lt;p&gt;The replacement for the functionality that &amp;#8220;vargs&amp;#8221; was supposed to provide will be provided by new functions in the verb environment, called get&lt;em&gt;dobj, get&lt;/em&gt;pobj, has&lt;em&gt;dobj, has&lt;/em&gt;pobj, and their string equivalents, get&lt;em&gt;dobj&lt;/em&gt;str, etc&amp;#8230;&lt;/p&gt;&lt;p&gt;For the &amp;#8220;get&lt;em&gt;&amp;#8221; functions, if that object was not found, or that string was not used in the sentence, a NoSuchObjectError will be thrown. Also, as get&lt;/em&gt;pobj requires a preposition argument, possibly a NoSuchPrepositionError will be thrown, if the preposition given was not used in the sentence.&lt;/p&gt;&lt;p&gt;However, this still leaves open the problem of what to do if someone tries to use a player to do something, i.e., there&amp;#8217;s a verb &amp;#8220;kill&amp;#8221; on a player called &amp;#8220;wizard&amp;#8221;, at this point, another player could say &amp;#8220;kill phil with wizard&amp;#8221;. This might be alleviated with the rwx bits on a verb, or rather, by adding another bit. More likely is that the &amp;#8220;rwx&amp;#8221; Unix-type permissions system will be repalced by ACLs.&lt;/p&gt;&lt;p&gt;I also want to implement a system for delaying events, using the twisted deferred system. Since deferreds already run as part of the reactor event loop, i think it could be added in relatively easily&amp;#8230;&lt;/p&gt;&lt;h3&gt;Plugins&lt;/h3&gt;&lt;p&gt;It is now possible to subclass inner.space.entity.Verb, which I&amp;#8217;m using to write the most basic verbs, such as Look, Emote, Say, etc&amp;#8230;as well as some programmer-oriented ones. The cool thing about this is that all of these verbs are installed by dropping a twisted-plugin-based package into your PYTHONPATH. This would make it easier for third parties to distribute new core packages (kinda like LambdaMOO has LambdaCore and JHCore, and others). When subclassing a verb, authors override execute() and use the object passed in to access variables from the parser.&lt;/p&gt;&lt;h3&gt;Observations&lt;/h3&gt;&lt;p&gt;The current system for controlling what the &amp;#8220;client&amp;#8221; sees is hard-coded to send a number of attributes from the object. I&amp;#8217;m going to change this so that if the object defines a verb called &amp;#8220;get_observations&amp;#8221;, that is called, and the result (presumably a hashtable) is sent to the client. If there is no verb defined, then the system object (#0) is checked for a verb with the same name that is passed an entity and the client object requesting it as arguments. I&amp;#8217;m not sure if there will be a default after this, or if it will be required that the system object supports that verb.&lt;/p&gt;&lt;h3&gt;Security&lt;/h3&gt;&lt;p&gt;In my last post, I discussed ideas for a restricted execution enviroment. Since then I had a couple of talks with glyph about the idea, and he brought up some good points, that made me realize it&amp;#8217;s truly difficult to allow totally untrusted code to run safely.&lt;/p&gt;&lt;p&gt;I realized long ago that one of the biggest issues to deal with is infinite recursion/looping, either with memory constraints, or infinite process spawning. A solution to this is to use the memory/process constraints placed on individual processes by the POSIX environment, i.e., forking processes for each verb. A prior version of InnerSpace attempted this, but had no simple way to provide interaction with the parent process.&lt;/p&gt;&lt;p&gt;One of my ideas is that, in combination with my &lt;A href='http://bubblehouse.org/cgi-bin/viewcvs.cgi/*checkout*/SaferPython/safer.py?content-type=text/plain'&gt;
 SaferPython&lt;/A&gt; module, I could create a transaction-based verb environment. Hopefully to the coder, it would be relatively unintrusive, but basically we trust that if the parent process receives a transaction list from the child, then we know that there was no ouroboros action going on.&lt;/p&gt;&lt;p&gt;One thing that is really fruitless is keeping people who are really determined to hack the server from doing so. I mean the kind of people who are willing to overflow buffers in Python&amp;#8217;s unicode handling, etc. I think it&amp;#8217;s just as likely that an exploit could be found in any other aspect of the codebase.&lt;/p&gt;&lt;p&gt;I think that the combination of forking, transactions, and restricted environments could provide a safe environment for generally untrusted, but registered users of the system.&lt;/p&gt;&lt;h3&gt;Build System&lt;/h3&gt;&lt;p&gt;Finally, I&amp;#8217;ve begun using distutils to provide a means for installing the server packages, and creating a JAR for the java client. Also, I have rudimentary support built-in for building a MacOS X double-clickable application. Right now, during build it asks you for a classpath to your TwistedJava.jar file, since hardcoding class paths into the Info.plist file seems to be the only way to access code outside the package.&lt;/p&gt;&lt;p&gt;Also, at the moment I am distributing a copy of the JavaApplicationStub binary which needs to be copied into the bundle for it to work. This is almost certainly illegal. I&amp;#8217;m hoping that until I figure out a solution, Apple doesn&amp;#8217;t sue me over 51 bytes of binary.&lt;/p&gt;&lt;h3&gt;In conclusion&amp;#8230;&lt;/h3&gt;&lt;p&gt;Anyways, that&amp;#8217;s pretty much everything for now. I&amp;#8217;m trying really hard to keep everything updated, but this is the part of the process I hate the most, i.e., the documentation. I have to work on that.&lt;/p&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2003/12/22/some-updates</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2003/12/22/some-updates</guid>
+                <link>http://username.github.io/2003/12/22/some-updates</link>
+                <guid>http://username.github.io/2003/12/22/some-updates</guid>
                 <pubDate>2003-12-22T00:00:00-05:00</pubDate>
         </item>
 
@@ -1638,36 +1317,36 @@ SaferPython&lt;/A&gt; module, I could create a transaction-based verb environmen
                 <description>&lt;p&gt;sometimes i go back and change dates of blog entries to make it look like i update my site more frequently than i do. the last three entries were all written on the same day.&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;sigh&amp;gt;…that feels better&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/2003/12/19/a-confession</link>
-                <guid>http://username.github.io/cmfudhm=/2003/12/19/a-confession</guid>
+                <link>http://username.github.io/2003/12/19/a-confession</link>
+                <guid>http://username.github.io/2003/12/19/a-confession</guid>
                 <pubDate>2003-12-19T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>rocking junk</title>
                 <description>&lt;p&gt;So I&amp;#8217;ve finally gotten a ProTools setup, after nearly two years of saying i was going to do it. My primary reason for doing so is that I&amp;#8217;m applying to &lt;a href='http://www.purchase.edu'&gt;Purchase&lt;/a&gt; for the third time, and I needed to be able to put in some serious time behind the mike (or in my case, &lt;a href='http://www.amplitube.com'&gt;amp-modelling software pre-amp&lt;/a&gt;).&lt;/p&gt;&lt;p&gt;I had all these grand plans of getting this serious system, originally a &lt;A href='http://www.digidesign.com/products/digi002/'&gt;Digi 002&lt;/A&gt;, or a &lt;a href='http://www.motu.com/english/motuaudio/896/'&gt;motu 896HD&lt;/a&gt;, but although &lt;a href='http://www.rescuecom.com'&gt;my new job&lt;/a&gt; affords me some excess of cash (at least, compared to the days of unemployment benefits), i still wasn&amp;#8217;t going to be able to get something like that in time for the auditions. I settled on the &lt;A href='http://www.digidesign.com/products/mbox/'&gt;mbox&lt;/A&gt;, which only has two inputs, but they&amp;#8217;re pretty high-quality, and since i overdub everything anyways, it&amp;#8217;s working out.&lt;/p&gt;&lt;p&gt;I&amp;#8217;ve also been using some royalty-free samples I got my hands around, and it&amp;#8217;s made my life much easier in the drum-sound department. This has, however, lent a distinct electronic/industrial flavor to some of my tunes.&lt;/p&gt;&lt;p&gt;Here&amp;#8217;s the latest crop of compositions:&lt;/p&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/Atmospheres.mp3'&gt;&lt;I&gt;Atmospheres&lt;/I&gt;&lt;/a&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/sample.mp3'&gt;&lt;I&gt;sample&lt;/I&gt;&lt;/a&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/light.mp3'&gt;&lt;I&gt;light&lt;/I&gt;&lt;/a&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/Atmospheres.mp3'&gt;&lt;I&gt;Atmospheres&lt;/I&gt;&lt;/a&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sample.mp3'&gt;&lt;I&gt;sample&lt;/I&gt;&lt;/a&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/light.mp3'&gt;&lt;I&gt;light&lt;/I&gt;&lt;/a&gt;&lt;small&gt; (Christensen)&lt;/small&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2003/12/17/rocking-junk</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2003/12/17/rocking-junk</guid>
+                <link>http://username.github.io/2003/12/17/rocking-junk</link>
+                <guid>http://username.github.io/2003/12/17/rocking-junk</guid>
                 <pubDate>2003-12-17T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>protools nonsense</title>
                 <description>&lt;p&gt;These are a series of tunes that I put together with the assistance of &lt;a href='http://bubblehouse.org/~joel'&gt;joel bouchard&lt;/a&gt; and his protools rig. We were just learning how to use the thing &amp;mdash; for two weeks we drove ourselves crazy figuring out all its little idiosyncrasies. These are the fruits of our labor.&lt;/p&gt;&lt;ol&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/elfago.mp3'&gt;&lt;i&gt;el-fago&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/misterblah.mp3'&gt;&lt;i&gt;Mr. Something-Something&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/psuede.mp3'&gt;&lt;i&gt;psuede&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Bouchard)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/pathways.mp3'&gt;&lt;i&gt;pathways&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/harvest.mp3'&gt;&lt;i&gt;harvest&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/untitled.mp3'&gt;&lt;i&gt;a rock song&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/rivieraparadise.mp3'&gt;&lt;i&gt;Riviera Paradise&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Vaughan)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/elfago.mp3'&gt;&lt;i&gt;el-fago&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/misterblah.mp3'&gt;&lt;i&gt;Mr. Something-Something&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/psuede.mp3'&gt;&lt;i&gt;psuede&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Bouchard)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/pathways.mp3'&gt;&lt;i&gt;pathways&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/harvest.mp3'&gt;&lt;i&gt;harvest&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Hovish)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/untitled.mp3'&gt;&lt;i&gt;a rock song&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/rivieraparadise.mp3'&gt;&lt;i&gt;Riviera Paradise&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Vaughan)&lt;/small&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2003/10/13/protools-nonsense</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2003/10/13/protools-nonsense</guid>
+                <link>http://username.github.io/2003/10/13/protools-nonsense</link>
+                <guid>http://username.github.io/2003/10/13/protools-nonsense</guid>
                 <pubDate>2003-10-13T00:00:00-04:00</pubDate>
         </item>
 
@@ -1695,8 +1374,8 @@ env.insert('MyClass', MyClass, ClassProtection)
 
 env.r_exec(someUntrustedCode)
 &lt;/pre&gt;&lt;p&gt;The manual insertion of &lt;em&gt;ALL&lt;/em&gt; language objects is a bit of a pain, but this can be automated once I figure out what classes/objects are 100% safe for this environment. Although there is support for creating new instances of protected (Shielded) class objects, they are currently returned unrestricted. I&amp;#8217;m planning on fixing this once I figure out a nice way to do it.&lt;/p&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2003/09/24/nice-new-things</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2003/09/24/nice-new-things</guid>
+                <link>http://username.github.io/2003/09/24/nice-new-things</link>
+                <guid>http://username.github.io/2003/09/24/nice-new-things</guid>
                 <pubDate>2003-09-24T00:00:00-04:00</pubDate>
         </item>
 
@@ -1711,8 +1390,8 @@ if(pid):
 else:
     # and the child executes the stuff here
 &lt;/pre&gt;&lt;p&gt;The catch-22 with all this neat forking stuff is that although you have no problems reading variables in the child, modifying them doesn&amp;#8217;t really do any good. My solution to this was to have each child open a socket to the parent and use a custom protocol to modify the data in the parent when it changed in the child.&lt;/p&gt;&lt;p&gt;Basically, I was using a remote object mechanism (first PyRO, and then my own home-brewed solution) to give code running in a sub-process access to game runtime objects (remember, the goal was to allow nearly transparent access to these objects). This ended up being rather inelegant, since although all of the objects in the child would work as remote references to objects in the parent, what do you do when someone calls &lt;tt&gt;obj.list.append(somedata)&lt;/tt&gt;?&lt;/p&gt;&lt;p&gt;Anyhow, those are the two major (bad) changes to InnerSpace since I last updated this page. In my next post I&amp;#8217;ll talk about some of the really cool changes that I&amp;#8217;ve touched on before.&lt;/p&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2003/09/23/ch-ch-ch-ch-changes</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2003/09/23/ch-ch-ch-ch-changes</guid>
+                <link>http://username.github.io/2003/09/23/ch-ch-ch-ch-changes</link>
+                <guid>http://username.github.io/2003/09/23/ch-ch-ch-ch-changes</guid>
                 <pubDate>2003-09-23T00:00:00-04:00</pubDate>
         </item>
 
@@ -1724,24 +1403,24 @@ else:
     &lt;li&gt; A much more efficient networking layer (thanks to &lt;a href='http://www.twistedmatrix.com'&gt;Twisted&lt;/a&gt;).&lt;/li&gt;
     &lt;li&gt; and much more&amp;#8230;&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2003/09/21/whoa-thats-a-spicy-meatball</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2003/09/21/whoa-thats-a-spicy-meatball</guid>
+                <link>http://username.github.io/2003/09/21/whoa-thats-a-spicy-meatball</link>
+                <guid>http://username.github.io/2003/09/21/whoa-thats-a-spicy-meatball</guid>
                 <pubDate>2003-09-21T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>tunes for enjoyment</title>
                 <description>&lt;p&gt;&lt;P&gt;These are some recordings that I put together with matt cole (drums) and rob pawlings (bass). We had a short-lived project called &lt;i&gt;sesshomaru&lt;/i&gt; that we had a lot of fun doing, even though we really didn&amp;#8217;t have the time to do anything productive with it. We&amp;#8217;ll see what comes of it all&amp;#8230;&lt;/P&gt;&lt;/p&gt;&lt;ol&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/sesshomaru/redbaron.mp3'&gt;&lt;i&gt;Red Baron&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Cobham)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/sesshomaru/freejazz.mp3'&gt;&lt;i&gt;Free Jazz for &amp;#8216;Heads&lt;/i&gt;&lt;/a&gt; =&amp;gt;  &lt;small&gt;(sesshomaru)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/sesshomaru/agogo.mp3'&gt;&lt;i&gt;A Go-Go&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Scofield)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/sesshomaru/bluebossa.mp3'&gt;&lt;i&gt;Blue Bossa&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Dorham)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/sesshomaru/allblues.mp3'&gt;&lt;i&gt;All Blues&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Davis)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/sesshomaru/dizshorn.mp3'&gt;&lt;i&gt;Who Stepped on Diz&amp;#8217;s Horn&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Wilson)&lt;/small&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a HREF='http://bubblehouse.org/cgi-bin/download.cgi/sesshomaru/cissystrut.mp3'&gt;&lt;i&gt;Cissy Strut&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Modeliste)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sesshomaru/redbaron.mp3'&gt;&lt;i&gt;Red Baron&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Cobham)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sesshomaru/freejazz.mp3'&gt;&lt;i&gt;Free Jazz for &amp;#8216;Heads&lt;/i&gt;&lt;/a&gt; =&amp;gt;  &lt;small&gt;(sesshomaru)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sesshomaru/agogo.mp3'&gt;&lt;i&gt;A Go-Go&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Scofield)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sesshomaru/bluebossa.mp3'&gt;&lt;i&gt;Blue Bossa&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Dorham)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sesshomaru/allblues.mp3'&gt;&lt;i&gt;All Blues&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Davis)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sesshomaru/dizshorn.mp3'&gt;&lt;i&gt;Who Stepped on Diz&amp;#8217;s Horn&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Christensen/Wilson)&lt;/small&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a HREF='http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sesshomaru/cissystrut.mp3'&gt;&lt;i&gt;Cissy Strut&lt;/i&gt;&lt;/a&gt; &lt;small&gt;(Modeliste)&lt;/small&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
-                <link>http://username.github.io/bxvzawm=/dhvuzxm=/2003/09/19/tunes-for-enjoyment</link>
-                <guid>http://username.github.io/bxvzawm=/dhvuzxm=/2003/09/19/tunes-for-enjoyment</guid>
+                <link>http://username.github.io/2003/09/19/tunes-for-enjoyment</link>
+                <guid>http://username.github.io/2003/09/19/tunes-for-enjoyment</guid>
                 <pubDate>2003-09-19T00:00:00-04:00</pubDate>
         </item>
 
@@ -1805,8 +1484,8 @@ else:
 &lt;p&gt;but the ice cream is so sweet, you almost forget about the fact the you just ate dirt.&lt;/p&gt;
 
 &lt;p&gt;almost.&lt;/p&gt;</description>
-                <link>http://username.github.io/cghpc2g=/bxvzawm=/2003/08/07/it-was-a-long-strange-trip</link>
-                <guid>http://username.github.io/cghpc2g=/bxvzawm=/2003/08/07/it-was-a-long-strange-trip</guid>
+                <link>http://username.github.io/2003/08/07/it-was-a-long-strange-trip</link>
+                <guid>http://username.github.io/2003/08/07/it-was-a-long-strange-trip</guid>
                 <pubDate>2003-08-07T00:00:00-04:00</pubDate>
         </item>
 
@@ -1826,8 +1505,8 @@ else:
 &lt;p&gt;this was the first time i got to see Camel Walk, Scent of a Mule, Fee, McGrupp, Brother, and Harpua, all tunes i had wanted to see for a long time, and all at one show!&lt;/p&gt;
 
 &lt;p&gt;what a fine warmup for IT!!!&lt;/p&gt;</description>
-                <link>http://username.github.io/cghpc2g=/bxvzawm=/2003/07/31/burgettstown-warmup</link>
-                <guid>http://username.github.io/cghpc2g=/bxvzawm=/2003/07/31/burgettstown-warmup</guid>
+                <link>http://username.github.io/2003/07/31/burgettstown-warmup</link>
+                <guid>http://username.github.io/2003/07/31/burgettstown-warmup</guid>
                 <pubDate>2003-07-31T00:00:00-04:00</pubDate>
         </item>
 
@@ -1844,8 +1523,8 @@ else:
 &lt;p&gt;and shit, who really works 60 hours a week anyways? i did that at american music for six weeks and it nearly killed me. granted, you’re making overtime, but sheeeit….&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;sigh&amp;gt;&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/2003/07/17/workin-for-the-man</link>
-                <guid>http://username.github.io/cmfudhm=/2003/07/17/workin-for-the-man</guid>
+                <link>http://username.github.io/2003/07/17/workin-for-the-man</link>
+                <guid>http://username.github.io/2003/07/17/workin-for-the-man</guid>
                 <pubDate>2003-07-17T00:00:00-04:00</pubDate>
         </item>
 
@@ -1857,8 +1536,8 @@ Set I:  AC/DC Bag,  Ya Mar,  Theme from the Bottom,  Saw it Again,  Poor Heart, 
 Set II:  Mr. Completely&amp;gt;  Low Rider&amp;gt;  Big Black Furry Creature from Mars&amp;gt;  Buried Alive&amp;gt;  Big Black Furry Creature from Mars&amp;gt;  Ha Ha Ha&amp;gt;  Big Black Furry Creature from Mars&amp;gt;  Mr. Completely&amp;gt;  Spread It Round,  Walls of the Cave,  Golgi Apparatus,  Slave to the Traffic Light
 Encore:  Sleeping Monkey&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;i was blown away when i first saw Mr. Completely come up, since it&amp;#8217;s definitely one of my favorite trey band tunes. from there the set just went into outer space.&lt;/p&gt;&lt;p&gt;which brings me to my next thought, which is whether i should try to go to the Burgettstown, PA show on the 29th. i&amp;#8217;m sure i could pick up a ticket on lot (there are many around on the extra ticket boards, and it may not even be sold out yet), but the issue that is going to decide this is primarily financial.&lt;/p&gt;&lt;p&gt;i have a couple of job interviews coming up (one today, actually), and i&amp;#8217;m hoping i&amp;#8217;ll have a job within the next two weeks. if i don&amp;#8217;t, i&amp;#8217;ll pretty much have to move back in with my parents (seinfeld was right; there is nothing about moving back home that indicates that your life is going in the right direction). however, if that &lt;i&gt;does&lt;/i&gt; happen, i won&amp;#8217;t need to pay this coming month&amp;#8217;s rent, so i&amp;#8217;ll be a little richer from the unemployment cashish&amp;#8230;&lt;/p&gt;&lt;p&gt;i guess this is something i&amp;#8217;ll decide on the 28th&amp;#8230;&lt;/p&gt;</description>
-                <link>http://username.github.io/cghpc2g=/bxvzawm=/2003/07/16/lets-go-phishin</link>
-                <guid>http://username.github.io/cghpc2g=/bxvzawm=/2003/07/16/lets-go-phishin</guid>
+                <link>http://username.github.io/2003/07/16/lets-go-phishin</link>
+                <guid>http://username.github.io/2003/07/16/lets-go-phishin</guid>
                 <pubDate>2003-07-16T00:00:00-04:00</pubDate>
         </item>
 
@@ -1871,8 +1550,8 @@ Encore:  Sleeping Monkey&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;one thing i don’t want is some stupid blog where i talk about shit that no one would ever want to read, which may be unavoidable.&lt;/p&gt;
 
 &lt;p&gt;i really hate the word ‘blog.’&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/2003/07/08/to-blog-or-not-to-blog</link>
-                <guid>http://username.github.io/cmfudhm=/2003/07/08/to-blog-or-not-to-blog</guid>
+                <link>http://username.github.io/2003/07/08/to-blog-or-not-to-blog</link>
+                <guid>http://username.github.io/2003/07/08/to-blog-or-not-to-blog</guid>
                 <pubDate>2003-07-08T00:00:00-04:00</pubDate>
         </item>
 
@@ -1885,16 +1564,16 @@ Encore:  Sleeping Monkey&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;i find the idea enticing, especially since i really feel like i’m only a few steps above hobodom myself, what with the unemployment and all. of course, i’d want to wander like that only if i had a big enough fund so i could not have to worry about eating and stuff.&lt;/p&gt;
 
 &lt;p&gt;but then again, i guess that’s the difference between hobo and traveler.&lt;/p&gt;</description>
-                <link>http://username.github.io/cmfudhm=/2003/07/08/getting-the-fuck-outta-dodge</link>
-                <guid>http://username.github.io/cmfudhm=/2003/07/08/getting-the-fuck-outta-dodge</guid>
+                <link>http://username.github.io/2003/07/08/getting-the-fuck-outta-dodge</link>
+                <guid>http://username.github.io/2003/07/08/getting-the-fuck-outta-dodge</guid>
                 <pubDate>2003-07-08T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>Posterity Tarball</title>
                 <description>&lt;p&gt;With this, the role of InnerSpace as my project for CSC436 has ended. Although I really didn’t get as far as I would have liked, IS is in a reasonably functional state. There is currently no documentation or even code comments, but that will be for another version. I’m still going to grant this release the title of &lt;A HREF='http://bubblehouse.org/innerspace/innerspace-0.5.tar.gz'&gt;innerspace-0.5&lt;/A&gt;&lt;/p&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2001/08/18/posterity-tarball</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2001/08/18/posterity-tarball</guid>
+                <link>http://username.github.io/2001/08/18/posterity-tarball</link>
+                <guid>http://username.github.io/2001/08/18/posterity-tarball</guid>
                 <pubDate>2001-08-18T00:00:00-04:00</pubDate>
         </item>
 
@@ -1953,16 +1632,16 @@ Encore:  Sleeping Monkey&lt;/code&gt;&lt;/pre&gt;
 		&lt;/ul&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2001/07/02/milestones</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2001/07/02/milestones</guid>
+                <link>http://username.github.io/2001/07/02/milestones</link>
+                <guid>http://username.github.io/2001/07/02/milestones</guid>
                 <pubDate>2001-07-02T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>CSC436 at SUNY Oswego</title>
                 <description>&lt;p&gt;I’m going to be using InnerSpace as my project for Doug Lea’s &lt;A HREF='http://gee.cs.oswego.edu/dl/csc436/'&gt;Network Systems&lt;/A&gt; class at &lt;A HREF='http://www.oswego.edu'&gt;SUNY Oswego&lt;/A&gt;. This is good for a couple of reasons. First of all, it’ll motivate me to find more time to finish this thing that’s been on my back for so very long. Second, I’ll be working with &lt;A HREF='mailto:groberts_NO_@_SPAM_oswego.edu'&gt;Greg Roberts&lt;/A&gt;, who will provide a valuable perspective, since he’s fairly unfamiliar with Python and especially InnerSpace. He’ll be helping me write verbs for the game, which will serve to teach him Python, show me were things are difficult or confusing, and also locate the numerous bugs that are probably just waiting to pop out. Finally, I’ll have access to DL’s brain. &lt;i&gt;(&amp;quot;eeexcellent&amp;quot;)&lt;/i&gt;&lt;/p&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2001/06/01/csc436-at-suny-oswego</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2001/06/01/csc436-at-suny-oswego</guid>
+                <link>http://username.github.io/2001/06/01/csc436-at-suny-oswego</link>
+                <guid>http://username.github.io/2001/06/01/csc436-at-suny-oswego</guid>
                 <pubDate>2001-06-01T00:00:00-04:00</pubDate>
         </item>
 
@@ -1975,8 +1654,8 @@ Encore:  Sleeping Monkey&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The buzzword-compliant description would be: InnerSpace is a text-based virtual reality framework that allows multiple Internet users to connect to, manipulate and aid in the creation of a limitless universe.&lt;/p&gt;
 
 &lt;p&gt;In other words, it’s a MUD, but it’s the best damn MUD out there!&lt;/p&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2000/03/06/introduction</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2000/03/06/introduction</guid>
+                <link>http://username.github.io/2000/03/06/introduction</link>
+                <guid>http://username.github.io/2000/03/06/introduction</guid>
                 <pubDate>2000-03-06T00:00:00-05:00</pubDate>
         </item>
 
@@ -1997,8 +1676,8 @@ Encore:  Sleeping Monkey&lt;/code&gt;&lt;/pre&gt;
 		&lt;b&gt;A Graphical Object Editor&lt;/b&gt; - So I may have come to appreciate UNIX, but I still love my Macintosh. By the same token, I want to be able to see at a glance all the major attributes of an object and be able to edit them easily.
 	&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2000/03/05/things-muds-should-have</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2000/03/05/things-muds-should-have</guid>
+                <link>http://username.github.io/2000/03/05/things-muds-should-have</link>
+                <guid>http://username.github.io/2000/03/05/things-muds-should-have</guid>
                 <pubDate>2000-03-05T00:00:00-05:00</pubDate>
         </item>
 
@@ -2015,16 +1694,16 @@ Encore:  Sleeping Monkey&lt;/code&gt;&lt;/pre&gt;
 
 &lt;li&gt;The InnerSpace client is still written in Java, which allows for easy distribution by applet or other platform-independent method.&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2000/03/05/so-much-code-so-little-time</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2000/03/05/so-much-code-so-little-time</guid>
+                <link>http://username.github.io/2000/03/05/so-much-code-so-little-time</link>
+                <guid>http://username.github.io/2000/03/05/so-much-code-so-little-time</guid>
                 <pubDate>2000-03-05T00:00:00-05:00</pubDate>
         </item>
 
         <item>
                 <title>History</title>
                 <description>&lt;p&gt;Initially, this project started as a port of LambdaMOO to Java. Of course, I didn’t even get halfway through the first design without realizing a million things that were either A.) annoying design choices in LambdaMOO, or B.) practically impossible to implement in Java. I got pretty far, too, before I realized this (in fact, I still have the original version of InnerSpace written in Java using mucho RMI &amp;lt;shudder&amp;gt;). I realized that there were a number of things that I wanted to implement that other MUD/MOO/M* packages just didn’t. BTW, I’m going to use the phrase MUD from here on, even though it’s an oversimplification.&lt;/p&gt;</description>
-                <link>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2000/03/05/history</link>
-                <guid>http://username.github.io/aw5uzxjzcgfjzq==/y29kaw5n/2000/03/05/history</guid>
+                <link>http://username.github.io/2000/03/05/history</link>
+                <guid>http://username.github.io/2000/03/05/history</guid>
                 <pubDate>2000-03-05T00:00:00-05:00</pubDate>
         </item>
 

@@ -17,7 +17,7 @@ categories:
 <p>Here&#8217;s the latest crop of compositions:</p>
 
 <ol>
-<li><a HREF="http://bubblehouse.org/cgi-bin/download.cgi/Atmospheres.mp3"><I>Atmospheres</I></a><small> (Christensen)</small></li>
-<li><a HREF="http://bubblehouse.org/cgi-bin/download.cgi/sample.mp3"><I>sample</I></a><small> (Christensen)</small></li>
-<li><a HREF="http://bubblehouse.org/cgi-bin/download.cgi/light.mp3"><I>light</I></a><small> (Christensen)</small></li>
+<li><a HREF="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/Atmospheres.mp3"><I>Atmospheres</I></a><small> (Christensen)</small></li>
+<li><a HREF="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/sample.mp3"><I>sample</I></a><small> (Christensen)</small></li>
+<li><a HREF="http://music.bubblehouse.org.s3-website-us-east-1.amazonaws.com/music/light.mp3"><I>light</I></a><small> (Christensen)</small></li>
 </ol>
