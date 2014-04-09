@@ -3,8 +3,7 @@ layout: post
 title: new stuff, and junk
 created: 1107288182
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

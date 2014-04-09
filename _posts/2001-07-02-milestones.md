@@ -3,10 +3,8 @@ layout: post
 title: Milestones
 created: 994102680
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  aW5uZXJzcGFjZQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- innerspace
+- coding
 ---
 <p>A couple weeks ago, we came up with a milestone chart for the rest of the project. Now they&#8217;re finally posted!</p> 
 

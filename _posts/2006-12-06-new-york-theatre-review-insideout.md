@@ -3,8 +3,7 @@ layout: post
 title: ! 'New York Theatre Review: InsideOut'
 created: 1165460537
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   cmV2aWV3cw==
 ---

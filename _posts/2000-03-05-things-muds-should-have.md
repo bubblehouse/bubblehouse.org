@@ -3,10 +3,8 @@ layout: post
 title: Things MUDs Should Have
 created: 952283434
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  aW5uZXJzcGFjZQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- innerspace
+- coding
 ---
 <ul>
 	<li>

@@ -3,8 +3,7 @@ layout: post
 title: Fun with Xargs on Mac OS X
 created: 1179330972
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- coding
 - !ruby/string:Sequel::SQL::Blob |-
   dW5peA==
 - !ruby/string:Sequel::SQL::Blob |-

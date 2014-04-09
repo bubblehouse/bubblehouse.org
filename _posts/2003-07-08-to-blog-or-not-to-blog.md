@@ -3,8 +3,7 @@ layout: post
 title: to blog or not to blog...
 created: 1057637011
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
+- rants
 ---
 ...that isn't really a question, since it's obvious what was my decision. i'm not sure if blogging is really for me, but i figure i'll give it a try...
 

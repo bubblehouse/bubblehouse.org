@@ -3,8 +3,7 @@ layout: post
 title: studio ear
 created: 1076824985
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

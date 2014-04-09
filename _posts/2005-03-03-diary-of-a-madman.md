@@ -3,8 +3,7 @@ layout: post
 title: diary of a madman
 created: 1109907905
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

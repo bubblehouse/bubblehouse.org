@@ -3,8 +3,7 @@ layout: post
 title: modu version 1.0 released!!!
 created: 1265752932
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- coding
 - !ruby/string:Sequel::SQL::Blob |-
   cHJvZ3JhbW1pbmc=
 - !ruby/string:Sequel::SQL::Blob |-

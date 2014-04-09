@@ -3,8 +3,7 @@ layout: post
 title: pedals and pedals and pedals
 created: 1165558874
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 - !ruby/string:Sequel::SQL::Blob |-

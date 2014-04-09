@@ -3,10 +3,8 @@ layout: post
 title: the privacy monsters
 created: 1074208557
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- rants
+- music
 ---
 i really don't like it when i have to fill out a form to download something. it doesn't matter what the site asks for, or how much i want what they have to offer; i just don't like being forced to fill out a form before i check their stuff out.
 

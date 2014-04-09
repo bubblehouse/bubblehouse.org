@@ -3,10 +3,8 @@ layout: post
 title: Burgettstown Warmup
 created: 1059658599
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cGhpc2g=
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- phish
+- music
 ---
 man, what a show...
 

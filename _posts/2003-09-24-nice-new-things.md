@@ -3,10 +3,8 @@ layout: post
 title: Nice New Things
 created: 1064435344
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  aW5uZXJzcGFjZQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- innerspace
+- coding
 ---
 <p>So right away I have something to show anyone who wants to look. I&#8217;ve been thinking about the whole RExec/Bastion problem, and I may have come up with a solution. I&#8217;d also certainly appreciate it if anyone could fill me in with any obvious security flaws</p>
 

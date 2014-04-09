@@ -3,8 +3,7 @@ layout: post
 title: Pattern-Based Drilling
 created: 1171861652
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   Z3VpdGFy
 - !ruby/string:Sequel::SQL::Blob |-

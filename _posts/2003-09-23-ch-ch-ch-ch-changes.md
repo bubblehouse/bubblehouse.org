@@ -3,10 +3,8 @@ layout: post
 title: Ch-ch-ch-ch-changes...
 created: 1064349746
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  aW5uZXJzcGFjZQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- innerspace
+- coding
 ---
 <p>First of all, welcome to the latest-greatest version of the InnerSpace website. Since I slacked off so much on updating recently, I decided to start using Moveable Type to make a weblog for this site. Considering it greatly simplifies the process for me, I hope to be able to post more frequently.</p>
 

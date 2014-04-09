@@ -3,10 +3,8 @@ layout: post
 title: Introduction
 created: 952374410
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  aW5uZXJzcGFjZQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- innerspace
+- coding
 ---
 Hrm, well, where to begin? InnerSpace has been in the design process for four years now, and has been written and rewritten many, many times. Each time I always thought, "Oh, I've got everything figured out, so I should be finished Real Soon Now." Ha!
 

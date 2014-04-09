@@ -3,8 +3,7 @@ layout: post
 title: Neat Color-Coded `svn status` Wrapper Script
 created: 1266858037
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- coding
 - !ruby/string:Sequel::SQL::Blob |-
   cHl0aG9u
 - !ruby/string:Sequel::SQL::Blob |-

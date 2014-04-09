@@ -3,10 +3,8 @@ layout: post
 title: So Much Code, So Little Time
 created: 952283434
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  aW5uZXJzcGFjZQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- innerspace
+- coding
 ---
 Really, there's many things that I think make InnerSpace pretty cool. If you're still with me at this point, you rock. Here's some miscellaneous neat stuff:
 

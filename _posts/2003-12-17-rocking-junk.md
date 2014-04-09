@@ -3,8 +3,7 @@ layout: post
 title: rocking junk
 created: 1071683867
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

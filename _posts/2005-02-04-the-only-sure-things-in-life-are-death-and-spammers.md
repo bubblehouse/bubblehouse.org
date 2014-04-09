@@ -3,8 +3,7 @@ layout: post
 title: the only sure things in life are death and spammers
 created: 1107574350
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
+- rants
 ---
 <p>just when i was sure i was out, they pulled me back in!!!</p>
 

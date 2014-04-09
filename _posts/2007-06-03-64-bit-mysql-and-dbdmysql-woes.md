@@ -3,8 +3,7 @@ layout: post
 title: 64-bit MySQL and DBD::mysql Woes
 created: 1180893904
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- coding
 - !ruby/string:Sequel::SQL::Blob |-
   dW5peA==
 - !ruby/string:Sequel::SQL::Blob |-

@@ -3,8 +3,7 @@ layout: post
 title: tunes for enjoyment
 created: 1063992977
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

@@ -3,8 +3,7 @@ layout: post
 title: the game of life...
 created: 1074283864
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- coding
 - !ruby/string:Sequel::SQL::Blob |-
   amF2YQ==
 ---

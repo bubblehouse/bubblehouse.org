@@ -3,8 +3,7 @@ layout: post
 title: the light in my room was too bright
 created: 1156480607
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
+- rants
 ---
 so i made a lampshade for it...
 <!--break-->

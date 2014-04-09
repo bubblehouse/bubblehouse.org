@@ -3,10 +3,8 @@ layout: post
 title: Be a Composer In Three Easy Steps
 created: 1178676834
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- rants
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

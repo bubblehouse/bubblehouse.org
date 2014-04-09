@@ -3,8 +3,7 @@ layout: post
 title: Notes on Mod_Python and Apache 2.2 on Mac OS X
 created: 1178049105
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- coding
 - !ruby/string:Sequel::SQL::Blob |-
   YXBhY2hl
 - !ruby/string:Sequel::SQL::Blob |-

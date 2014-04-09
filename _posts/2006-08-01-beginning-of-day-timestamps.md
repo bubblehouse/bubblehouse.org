@@ -3,8 +3,7 @@ layout: post
 title: beginning of day timestamps
 created: 1154477877
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- coding
 - !ruby/string:Sequel::SQL::Blob |-
   cGhw
 - !ruby/string:Sequel::SQL::Blob |-

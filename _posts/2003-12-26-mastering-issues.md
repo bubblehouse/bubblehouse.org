@@ -3,8 +3,7 @@ layout: post
 title: mastering issues
 created: 1072465641
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

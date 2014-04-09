@@ -3,10 +3,8 @@ layout: post
 title: MySQLs mangled syntax handling and INNER JOINs
 created: 1265138308
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- rants
+- coding
 - !ruby/string:Sequel::SQL::Blob |-
   bXlzcWw=
 - !ruby/string:Sequel::SQL::Blob |-

@@ -3,10 +3,8 @@ layout: post
 title: some updates...
 created: 1072108887
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  aW5uZXJzcGFjZQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- innerspace
+- coding
 ---
 <p>So, as it&#8217;s been awhile since I&#8217;ve updated, I have lots of new developments. I&#8217;ve been fortunate to find some time to tinker with IS, and there&#8217;s lots of cool stuff coming along. </p>
 

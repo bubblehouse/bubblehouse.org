@@ -3,8 +3,7 @@ layout: post
 title: getting the fuck outta dodge
 created: 1057715289
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
+- rants
 ---
 sometimes, i admire vagrants. syracuse seems to have quite a lot of them downtown. i guess i don't think of this place as being that big, even though i guess it is. the truth is, nobody wants to be homeless, or otherwise forced to panhandle. but the prospect of only having one thing "to worry about" is alluring, at least in theory.
 

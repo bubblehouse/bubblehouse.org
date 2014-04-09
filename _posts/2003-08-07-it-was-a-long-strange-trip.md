@@ -3,10 +3,8 @@ layout: post
 title: IT was a long, strange trip
 created: 1060230383
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cGhpc2g=
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- phish
+- music
 ---
 i love to drive. i really do. the thought of driving 14 hours to see one of my favorite bands was not a strange one for me; i had done it on several occasions  in the past, and been very glad i did.
 

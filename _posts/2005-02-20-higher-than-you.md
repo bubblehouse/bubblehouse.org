@@ -3,8 +3,7 @@ layout: post
 title: higher than you
 created: 1108954996
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

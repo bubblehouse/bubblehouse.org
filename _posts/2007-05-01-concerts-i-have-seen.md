@@ -3,8 +3,7 @@ layout: post
 title: Concerts I Have Seen
 created: 1178077372
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 ---
 The criteria I'll use to dictate whether or not to list something would involve how much of an impact the show made  on me. In the case of opening acts, if I remember their name and music, I'll list them. I couldn't possibly cover all the smaller shows I've seen, so I'm not even going to count shows by my peers and so forth.
 <!--break-->

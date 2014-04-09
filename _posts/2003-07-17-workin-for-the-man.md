@@ -3,8 +3,7 @@ layout: post
 title: workin' for the man
 created: 1058424754
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
+- rants
 ---
 i had the beginnings of the interview process today with <B>american express financial advisors</B>. i'm rather torn over what to think about it, because it's not the kind of job i ever imagined myself doing. it's basically very much like a medical residency; you don't get paid shit to start, but if you get through the first two-to-three years, you'll be making around 100k.
 

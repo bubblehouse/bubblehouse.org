@@ -3,8 +3,7 @@ layout: post
 title: working with the diminished scale
 created: 1153268813
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   Z3VpdGFy
 - !ruby/string:Sequel::SQL::Blob |-

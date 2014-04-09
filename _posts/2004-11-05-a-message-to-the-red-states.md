@@ -4,8 +4,7 @@
 title: a message to the red states
 created: 1099676343
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
+- rants
 - !ruby/string:Sequel::SQL::Blob |-</p>
 
 <h2 id="_zxhjzxjwdhm">  ZXhjZXJwdHM=</h2>

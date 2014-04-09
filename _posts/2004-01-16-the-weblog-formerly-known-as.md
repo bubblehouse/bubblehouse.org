@@ -3,8 +3,7 @@ layout: post
 title: the weblog formerly known as...
 created: 1074270801
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cmFudHM=
+- rants
 ---
 <p>so, although i did take some pleasure in my chosen title for this weblog, being the simpsons fanatic that i am, i decided that it sounds too much like some angsty goth kid's page of lamentations.</p>
 

@@ -3,8 +3,7 @@ layout: post
 title: Camp MMW Rocked My Face Off
 created: 1218553803
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   Z3VpdGFy
 - !ruby/string:Sequel::SQL::Blob |-

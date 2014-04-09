@@ -3,10 +3,8 @@ layout: post
 title: let's go phishin'
 created: 1058380611
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  cGhpc2g=
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- phish
+- music
 ---
 <p>i&#8217;m pretty stoked about <a href="http://www.phish.com">phish</a>&#8217;s evolution lately. it&#8217;s kinda funny; they have so many side projects going on, and it just seems to make them better and more solid as a band. look at their latest show:</p>
 

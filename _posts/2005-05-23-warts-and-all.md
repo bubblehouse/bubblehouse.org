@@ -3,8 +3,7 @@ layout: post
 title: warts and all
 created: 1116843810
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---

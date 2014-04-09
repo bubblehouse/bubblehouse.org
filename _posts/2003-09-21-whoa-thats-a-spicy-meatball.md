@@ -3,10 +3,8 @@ layout: post
 title: Whoa! That's a Spicy Meatball!!
 created: 1064181751
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  aW5uZXJzcGFjZQ==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29kaW5n
+- innerspace
+- coding
 ---
 <p>So, it&#8217;s been a pretty long time since i&#8217;ve updated anything on this page. This is, however, no indication of work being done on InnerSpace; as a matter of fact, things are better than ever!</p>
 

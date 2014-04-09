@@ -3,8 +3,7 @@ layout: post
 title: vocal tracking is hard
 created: 1072580328
 categories:
-- !ruby/string:Sequel::SQL::Blob |-
-  bXVzaWM=
+- music
 - !ruby/string:Sequel::SQL::Blob |-
   dHVuZXM=
 ---
