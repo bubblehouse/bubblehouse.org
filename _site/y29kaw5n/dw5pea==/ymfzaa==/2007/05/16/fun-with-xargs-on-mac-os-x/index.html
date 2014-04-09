@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fun with Xargs on Mac OS X</title>
+    
+    <meta name="author" content="Phil Christensen">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Bubblehouse</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Fun with Xargs on Mac OS X </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>16 May 2007</span>
+    </div>
+    <div class="content">
+      <p><em>This is something I wrote over at <a href='http://docforge.com'>DocForge</a>, but I&#8217;m keeping it here for posterity. You never know what those crazy wiki-ers might do with it over there <tt>;-)</tt></em></p><p>I&#8217;ve got a directory full of eBooks in the godawful Microsoft .lit format. I had marked with the Finder labels the ones I&#8217;ve already read, and wanted to convert all the ones I hadn&#8217;t read yet into a readable format.</p><p>After using the Spotlight UNIX tools and applying liberal amounts of command-line trickery, the end result was a rather beautiful pipeline, if I do say so myself.
+<!--break-->
+First, I used the <tt>mdfind</tt> command to filter all the Items that had the red label. We&#8217;re going to query the <tt>kMDItemFSLabel</tt> properties; the red label has a value of <tt>6</tt> (I found this out by using <tt>mdls</tt> on a file with the desired label).</p><p>Since I only want to search a particular directory, I use the <tt>-onlyin</tt> switch to limit the query:</p><pre class='bash'>mdfind -onlyin /Users/phil/Desktop/books/ <span style='color: #ff0000;'>&quot;kMDItemFSLabel&nbsp;!= 6&quot;</span></pre><pre>/Users/phil/Desktop/books/one.lit
+/Users/phil/Desktop/books/two.lit
+/Users/phil/Desktop/books/other.rtf
+/Users/phil/Desktop/books/three.lit
+/Users/phil/Desktop/books/something.html
+...
+...</pre><p>Some of those aren&#8217;t .lit files, so I&#8217;ll just use <tt>grep</tt>:</p><pre class='bash'>mdfind -onlyin /Users/phil/Desktop/books/ <span style='color: #ff0000;'>&quot;kMDItemFSLabel&nbsp;!= 6&quot;</span> | grep <span style='color: #ff0000;'>&quot;.lit&quot;</span></pre><pre>/Users/phil/Desktop/books/one.lit
+/Users/phil/Desktop/books/two.lit
+/Users/phil/Desktop/books/three.lit
+...
+...</pre><p>I could have limited the Spotlight query further, but what fun would that be?</p><p>Now, ultimately I&#8217;m going to use this output with <tt>xargs</tt>, but because of limitations imposed by the .lit conversion app, I need to get the basename of these files. For this <tt>sed</tt> will do the trick:</p><pre class='bash'>mdfind -onlyin /Users/phil/Desktop/books/ <span style='color: #ff0000;'>&quot;kMDItemFSLabel&nbsp;!= 6&quot;</span> | grep <span style='color: #ff0000;'>&quot;.lit&quot;</span> | \
+    sed <span style='color: #ff0000;'>'s/<span style='color: #000099; font-weight: bold;'>\/</span>Users<span style='color: #000099; font-weight: bold;'>\/</span>phil<span style='color: #000099; font-weight: bold;'>\/</span>Desktop<span style='color: #000099; font-weight: bold;'>\/</span>books<span style='color: #000099; font-weight: bold;'>\/</span>//'</span></pre><pre>one.lit
+two.lit
+three.lit
+...
+...</pre><p>Finally, I pass this onto <tt>xargs</tt>, then the unfortunately named <a class='external text' href='http://www.convertlit.com' title='http://www.convertlit.com'>ConvertLIT</a> tool:</p><pre class='bash'>mdfind -onlyin /Users/phil/Desktop/books/ <span style='color: #ff0000;'>&quot;kMDItemFSLabel&nbsp;!= 6&quot;</span> | grep <span style='color: #ff0000;'>&quot;.lit&quot;</span> | \
+    sed <span style='color: #ff0000;'>'s/<span style='color: #000099; font-weight: bold;'>\/</span>Users<span style='color: #000099; font-weight: bold;'>\/</span>phil<span style='color: #000099; font-weight: bold;'>\/</span>Desktop<span style='color: #000099; font-weight: bold;'>\/</span>books<span style='color: #000099; font-weight: bold;'>\/</span>//'</span>  | xargs -I \<span style='color: #66cc66;'>&#123;</span>\<span style='color: #66cc66;'>&#125;</span> clit \<span style='color: #66cc66;'>&#123;</span>\<span style='color: #66cc66;'>&#125;</span> oebps/\<span style='color: #66cc66;'>&#123;</span>\<span style='color: #66cc66;'>&#125;</span>/</pre><pre>$ clit one.lit oebps/one.lit/
+$ clit two.lit oebps/two.lit/
+$ clit three.lit oebps/three.lit/
+$ ...
+$ ...</pre><p>I&#8217;m replicating the syntax of <tt>find</tt>&#8217;s <tt>-exec</tt> switch with <tt>xargs</tt>&#8217; <tt>-I</tt> switch. This will replace all occurrences of the <tt>{}</tt> with the filename from standard input.</p>
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#y29kaw5n-ref">
+    		y29kaw5n <span>22</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#dw5pea==-ref">
+    		dw5pea== <span>4</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#ymfzaa==-ref">
+    		ymfzaa== <span>2</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/cmfudhm=/bxvzawm=/dhvuzxm=/2007/05/08/be-a-composer-in-three-easy-steps" title="Be a Composer In Three Easy Steps">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/y29kaw5n/dw5pea==/bxlzcww=/y29tcglsaw5n/2007/06/03/64-bit-mysql-and-dbdmysql-woes" title="64-bit MySQL and DBD::mysql Woes">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2014 Phil Christensen
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

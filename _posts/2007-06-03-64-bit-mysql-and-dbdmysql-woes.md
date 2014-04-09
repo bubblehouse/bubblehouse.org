@@ -25,7 +25,7 @@ dbdimp.c:1565: error: for each function it appears in.)
 dbdimp.c:1565: error: parse error before numeric constant
 dbdimp.c:1567: error: parse error before numeric constant
 dbdimp.c:1681: error: parse error before numeric constant
-make: *** [dbdimp.o] Error 1
+make: *** dbdimp.o Error 1
 </code>
 <!--break-->
 
