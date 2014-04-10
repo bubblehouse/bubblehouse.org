@@ -4,8 +4,7 @@ title: the game of life...
 created: 1074283864
 categories:
 - coding
-- !ruby/string:Sequel::SQL::Blob |-
-  amF2YQ==
+- java
 ---
 it's incredibly unusual for me to post this many times in a week, much less twice in a day, but...
 

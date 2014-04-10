@@ -5,8 +5,7 @@ created: 1153268813
 categories:
 - music
 - guitar
-- !ruby/string:Sequel::SQL::Blob |-
-  bGVzc29ucw==
+- lessons
 ---
 I've been working with the dimished scale lately, and I thought it might be a good idea to document how I wrap my mind around it.
 

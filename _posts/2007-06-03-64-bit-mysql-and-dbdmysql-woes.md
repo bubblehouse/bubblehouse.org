@@ -4,11 +4,9 @@ title: 64-bit MySQL and DBD::mysql Woes
 created: 1180893904
 categories:
 - coding
-- !ruby/string:Sequel::SQL::Blob |-
-  dW5peA==
+- unix
 - mysql
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29tcGlsaW5n
+- compiling
 ---
 I was attempting to install DBD::mysql today, and I ran into a fiendishly difficult problem.
 

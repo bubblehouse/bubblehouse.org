@@ -5,8 +5,7 @@ created: 1171861652
 categories:
 - music
 - guitar
-- !ruby/string:Sequel::SQL::Blob |-
-  bGVzc29ucw==
+- lessons
 ---
 Begin with this basic graphical pattern:
 

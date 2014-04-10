@@ -4,10 +4,8 @@ title: beginning of day timestamps
 created: 1154477877
 categories:
 - coding
-- !ruby/string:Sequel::SQL::Blob |-
-  cGhw
-- !ruby/string:Sequel::SQL::Blob |-
-  cmVmbGV4aW9ucw==
+- php
+- reflexions
 ---
 <p><a href="http://www.driveling.net/">mark</a> got me thinking about this, and then i was messing around with one of my own projects that needed the same feature, and i realized the easy way to do it.</p>
 

@@ -4,10 +4,8 @@ title: Fun with Xargs on Mac OS X
 created: 1179330972
 categories:
 - coding
-- !ruby/string:Sequel::SQL::Blob |-
-  dW5peA==
-- !ruby/string:Sequel::SQL::Blob |-
-  YmFzaA==
+- unix
+- bash
 ---
 <p><em>This is something I wrote over at <a href="http://docforge.com">DocForge</a>, but I&#8217;m keeping it here for posterity. You never know what those crazy wiki-ers might do with it over there <tt>;-)</tt></em></p>
 

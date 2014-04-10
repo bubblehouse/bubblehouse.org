@@ -4,8 +4,7 @@ title: ! 'New York Theatre Review: InsideOut'
 created: 1165460537
 categories:
 - music
-- !ruby/string:Sequel::SQL::Blob |-
-  cmV2aWV3cw==
+- reviews
 ---
 <p>We got a pretty favorable review on <a href="http://www.nytheatre.com/nytheatre/archweb/arch2006_10.htm#236">NewYorkTheatre.com</a>. They were kind of harsh with regards to the script, but gave a favorable review overall. And of course, my favorite part:</p>
 

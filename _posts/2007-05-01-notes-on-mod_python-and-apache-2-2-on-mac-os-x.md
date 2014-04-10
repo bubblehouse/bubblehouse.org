@@ -4,12 +4,9 @@ title: Notes on Mod_Python and Apache 2.2 on Mac OS X
 created: 1178049105
 categories:
 - coding
-- !ruby/string:Sequel::SQL::Blob |-
-  YXBhY2hl
-- !ruby/string:Sequel::SQL::Blob |-
-  dW5peA==
-- !ruby/string:Sequel::SQL::Blob |-
-  Y29tcGlsaW5n
+- apache
+- unix
+- compiling
 ---
 I'm hoping to get away from PHP in favor of mod_python, but the first thing I needed to do was get mod_python successfully working on Mac OS X. I tried once before, using the built-in Apache and Python binaries that ship with Mac OS X. At the time (I think this was still 10.4, but it could have been 10.3), the built-in Python wasn't multithreaded (or something like that) and the mod_python developers were starting to move away from Apache 1.3 altogether.
 
