@@ -19,7 +19,7 @@ It was not easy.
 Apache 2 compiles fine with older versions, but mod_python has problems. Make sure to install the latest version of the XCode tools, available at <a href="http://developer.apple.com">Apple's Developer Site</a>.
 
 ### Python 2.4.4 (pythonmac.org distribution)
-You should be able to use any thread-enabled version of Python, but I choose to use Bob Ippolito's python distribution from (pythonmac.org)[http://pythonmac.org/packages/py24-fat/index.html]. Also, I did choose 2.4.4 instead of 2.5, but I would imagine 2.5 would work just as well.
+You should be able to use any thread-enabled version of Python, but I choose to use Bob Ippolito's python distribution from [pythonmac.org](http://pythonmac.org/packages/py24-fat/index.html). Also, I did choose 2.4.4 instead of 2.5, but I would imagine 2.5 would work just as well.
 
 ###Expat 2.0
 
@@ -52,7 +52,7 @@ First of all, I had to turn off a number of extra modules I don't ever use. I li
 
 * Had to make sure the TypesConfig directive was pointing to the right place, with: `TypesConfig /private/etc/httpd/mime.types`
 * For now, Apache doesn't seem to know where to look for the config file. It tries to find it at `/httpd.conf`, so for now I have to launch the apache process manually, and can't use <tt>apachectl</tt>. This is probably a problem with my configure line, but I can't figure out what, since I definitely included `--sysconfdir`
-* For some reason, after all this I had a problem with my Subversion installation. Normally, I use the subversion package found at (Metissian)[http://metissian.com/projects/macosx/subversion/], but this seemed damaged or otherwise broken because I was getting an error similar to the one I was getting from the mod_python configure process (before I recompiled expat).
+* For some reason, after all this I had a problem with my Subversion installation. Normally, I use the subversion package found at [Metissian](http://metissian.com/projects/macosx/subversion/), but this seemed damaged or otherwise broken because I was getting an error similar to the one I was getting from the mod_python configure process (before I recompiled expat).
 
 ### Retarded Hacks to Fix above
 
