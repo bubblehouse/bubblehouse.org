@@ -6,42 +6,42 @@ tagline: IT Consulting Services
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+### Cloud Solutions
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+Our expert-level knowledge of the Amazon AWS ecosystem allows us to design your business or organization
+a redundant, agile, high-performance cloud architecture.
 
-## Update Author Attributes
+We can advise you on security concerns, risk mitigation, and audit preparation, and have experience working
+with HIPAA and Sarbanes-Oxley compliance staff.
 
-In `_config.yml` remember to specify your own data:
     
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+### IT Automation
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+Modern, highly virtualized IT environments require a new approach to buildout. Creation of new instances in
+response to failure or scaling needs should be as automated as possible.
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+Our Puppet-based configuration managment tools allow us to automate anything from application deployments to
+multi-enviroment infrastructures.
 
-    $ rm -rf _posts/core-samples
 
-Here's a sample "posts list".
+### System Monitoring
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+The same tools that provision servers can also configure the monitoring of those servers. Ensure that your
+systems team can know what's going on at all times, and can respond proactively to potential issues.
 
-## To-Do
+We'll help you select a suite of tools like Nagios, Cacti, AWS CloudWatch and others to ensure your infrastructure
+is up at all times.
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+
+### Developer Operations
+
+Source control and automated unit tests are just the beginning. A solid DevOps foundation lets your 
+development team focus on what they do best. No matter your development process, from weekly releases to
+rolling release, we can develop a customized, automated build system that takes the guesswork out of
+deploys and reduces risk during new feature development.
+
+We can help your team create build and deploy chains on Jenkins/Hudson, Travis or any other continuous
+integration toolit. Automatically build customized development VMs on-demand, so new coders can start
+contributing their first day.
 
 
