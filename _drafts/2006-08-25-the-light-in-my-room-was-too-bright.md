@@ -7,4 +7,4 @@ categories:
 ---
 so i made a lampshade for it...
 <!--break-->
-<a href="http://bubblehouse.org/home/system/files/sconce.jpg"><img src="http://bubblehouse.org/home/system/files/sconce.jpg" border="0" alt="lampshade"/></a>
+<a href="http://files.bubblehouse.org.s3-website-us-east-1.amazonaws.com/sconce.jpg"><img src="http://files.bubblehouse.org.s3-website-us-east-1.amazonaws.com/sconce.jpg" border="0" alt="lampshade"/></a>

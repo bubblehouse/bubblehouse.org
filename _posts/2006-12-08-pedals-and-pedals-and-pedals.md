@@ -7,7 +7,7 @@ categories:
 - tunes
 - guitar
 ---
-<img src="http://bubblehouse.org/home/?q=system/files/12-08-06_0037.jpg"/>
+<img src="http://files.bubblehouse.org.s3-website-us-east-1.amazonaws.com/12-08-06_0037.jpg"/>
 <p>
 <h3>Top Row:</h3>
 Ernie Ball VP Jr., Voodoo Labs Pedal Power 2+, Dunlop Crybaby, Sovtek Big Muff Pi, Boss Metal Zone
