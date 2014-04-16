@@ -7,6 +7,7 @@ categories:
 - music
 ---
 ![laurie got offended that i used the word puke, but to me, that's what her dinner tasted like @ Fontana's, Lower East Side](http://files.bubblehouse.org.s3.amazonaws.com/flyers/2011-01-29_flyer_lowres.jpg)
+
 TELL THE DOOR YOU'RE HERE TO SEE seaflux FOR HALF OFF ADMISSION ($5)!!!
 
 â€œMr. Collins tells me that you are schooled in the deadly arts, Miss Bennet.â€

@@ -7,6 +7,7 @@ categories:
 - music
 ---
 ![Seaflux Live @ Europa Night Club, Greenpoint](http://files.bubblehouse.org.s3.amazonaws.com/flyers/2008-11-13_flyer.jpg)
+
 "doin' it to you in your ear-hole, baby!"
 
 Come rock out to the intense jams of seaflux.

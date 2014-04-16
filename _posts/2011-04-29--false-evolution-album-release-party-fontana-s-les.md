@@ -1,12 +1,13 @@
 ---
 layout: post
-title: false evolution album release party @ Fontana's, LES
+title: "false evolution" album release party @ Fontana's, LES
 created: 1304121600
 categories: 
 - gigs
 - music
 ---
-![false evolution album release party @ Fontana's, LES](http://files.bubblehouse.org.s3.amazonaws.com/flyers/2011-04-29_flyer_lowres.jpg)
+!["false evolution" album release party @ Fontana's, LES](http://files.bubblehouse.org.s3.amazonaws.com/flyers/2011-04-29_flyer_lowres.jpg)
+
 Months of constant toiling in an underground bunker have yielded results for Brooklyn's favorite jam-rock trio, seaflux. Now ready to unleash the fruits of their labor on an unsuspecting populace, seaflux prepares to hold an album release party that will live on in the annals of rock music history.
 
 Starting at 8, we've got an amazing opening lineup. First, Switchblade hits the stage for a mind-blowing extravaganza of epic metal madness. They'll twist and tear your brain with masterful compositions of extreme testicular fortitude.

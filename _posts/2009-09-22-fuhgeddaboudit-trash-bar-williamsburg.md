@@ -7,6 +7,7 @@ categories:
 - music
 ---
 ![fuhgeddaboudit @ Trash Bar, Williamsburg](http://files.bubblehouse.org.s3.amazonaws.com/flyers/2009-09-22_flyer_lowres.jpg)
+
 It's a universal feeling that we all have about this time of year. The powers that be have flipped the switch, and converted the stupefying heat and humidity of the New York summer into the dismal gray of a metro area autumn...
 
 Is there anything that could make you feel better about the speed at which we're heading towards the cold, dark months of winter?

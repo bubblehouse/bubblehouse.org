@@ -7,6 +7,7 @@ categories:
 - music
 ---
 ![hard rock for your delight @ Fontana's Bar, Lower East Side](http://files.bubblehouse.org.s3.amazonaws.com/flyers/2010-10-08_flyer_lowres.jpg)
+
 It's been a long week. Digging ditches, hauling loads, 16 tons, whaddya get? A powerful lust for drink and hard rock, that's what!
 
 A shudder of sheer excitement rushes through your body as you realize the massive hot bomb of rock about to invade Fontana's Bar in Chinatown.
