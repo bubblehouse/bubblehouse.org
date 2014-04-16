@@ -10,17 +10,17 @@ categories:
 
 TELL THE DOOR YOU'RE HERE TO SEE seaflux FOR HALF OFF ADMISSION ($5)!!!
 
-â€œMr. Collins tells me that you are schooled in the deadly arts, Miss Bennet.â€
-
-â€œI am, though not to half the level of proficiency your Ladyship has attained.â€
-
-â€œOh! Then â€” some time or other I shall be happy to see you spar with one of my ninjas.â€
-
-â€œWe never had any ninjas.â€
-
-â€œNo ninjas! How was that possible? Five daughters brought up at home without any ninjas! I never heard of such a thing. Your mother must have been quite a slave to your safety.â€
-
-Elizabeth could hardly stop smiling as she assured her that had not been the case.
+> "Mr. Collins tells me that you are schooled in the deadly arts, Miss Bennet."
+> 
+> "I am, though not to half the level of proficiency your Ladyship has attained."
+> 
+> "Oh! Then &mdash; some time or other I shall be happy to see you spar with one of my ninjas."
+> 
+> "We never had any ninjas."
+> 
+> "No ninjas! How was that possible? Five daughters brought up at home without any ninjas! I never heard of such a thing. Your mother must have been quite a slave to your safety."
+> 
+> Elizabeth could hardly stop smiling as she assured her that had not been the case.
 
 Come on out and rock with seaflux at Fontana's in Chinatown! It's the only way to save yourself from the zombies, especially if you haven't any ninjas.
 
