@@ -6,6 +6,7 @@ categories:
 - gigs
 - music
 ---
+![summer in the gritty @ Public Assembly, Williamsburg](http://files.bubblehouse.org.s3.amazonaws.com/flyers/2010-06-30_flyer_lowres.jpg)
 Every once in a while, a musical event comes along that demands your participation. A chance to let loose with a massive bloc of high-energy rock bands is coming your way at high speed, and you only have a short time to prepare for the onslaught.
 
 The mysterious and legendary Rockers' Union has emerged from the dank cesspool of the Metroland rock scene, and is proud to put on an event of biblical proportions.

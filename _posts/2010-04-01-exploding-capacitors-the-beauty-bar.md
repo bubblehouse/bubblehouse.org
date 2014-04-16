@@ -6,6 +6,7 @@ categories:
 - gigs
 - music
 ---
+![exploding capacitors @ The Beauty Bar](http://files.bubblehouse.org.s3.amazonaws.com/flyers/2010-04-01_flyer_lowres.jpg)
 A new craze is taking control this once great nation, unhindered by conventional standards of morality and decency, and ready to restore this country to its former standards of discovery and rebellion.
 
 The engineers of this cultural coup have spent weeks infiltrating various positions in the Thursday Night Beauty Bar Cabal, and are now ready to conquer with a dual performance of the two hardest-working rock bands on the East Coast.
