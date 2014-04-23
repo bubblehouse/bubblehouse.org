@@ -47,9 +47,15 @@
     </div>
 
     <div class="container-narrow">
-
       <div class="content">
-        {{ content }}
+        <div class="row">
+          <div class="sidebar span4">
+            {% include custom/sidebar %}
+          </div>
+          <div class="main span8">
+            {{ content }}
+          </div>
+        </div>
       </div>
       <hr>
       <footer>

@@ -1,5 +1,4 @@
 ---
-layout: default
 layout: page
 title: Bubblehouse
 tagline: IT Consulting Services
