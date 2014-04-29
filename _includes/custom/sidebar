@@ -1,1 +1,11 @@
-test
+<div class="side-box">
+  <div class="box-content">
+  <ul>
+    <li><a href="https://github.com/philchristensen">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/philchristensennyc">LinkedIn</a></li>
+    <li><a href="http://osrc.dfm.io/philchristensen">Open Source Report Card</a></li>
+    <li><a href="https://coderwall.com/philchristensen">Coderwall</a></li>
+  </ul>
+  </div>
+</div>
+

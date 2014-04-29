@@ -35,7 +35,7 @@
   <body>
     <div class="navbar">
       <div class="navbar-inner">
-        <div class="container-narrow">
+        <div class="container">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <ul class="nav">
             {% assign pages_list = site.pages %}
@@ -46,14 +46,14 @@
       </div>
     </div>
 
-    <div class="container-narrow">
+    <div class="container">
       <div class="content">
         <div class="row">
-          <div class="sidebar span4">
-            {% include custom/sidebar %}
-          </div>
-          <div class="main span8">
+          <div class="main span9">
             {{ content }}
+          </div>
+          <div class="sidebar span3">
+            {% include custom/sidebar %}
           </div>
         </div>
       </div>
