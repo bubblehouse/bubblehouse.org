@@ -40,42 +40,48 @@ blockquote {
 	border-color: #cb4b16;
 }
 
-
 .repo .language,
 .gist .language {
 	display: inline-block;
-	min-width: 65px;
+	text-align: center;
+	min-width: 70px;
 	opacity: 0.6;
+	margin-right: 5px;
 	text-transform: lowercase;
-	line-height: 90%;
+	font-weight: bold;
+	line-height: 16px;
 	border-radius: 4px;
-	background-color: #073642;
+	background-color: #04242B;
+	color: #002a35;
 }
 
 .repo .python,
 .gist .python {
-	background-color: #add39b;
+	background-color: #728914;
+}
+.repo .puppet,
+.gist .puppet {
+	background-color: #5859B7;
 }
 .repo .objective-c,
 .gist .objective-c {
-	background-color: #add39b;
+	background-color: #5C3A1A;
 }
 .repo .javascript,
 .gist .javascript {
-	background-color: #add39b;
+	background-color: #C61B6E;
 }
 .repo .shell,
 .gist .shell {
-	background-color: #d2c1da;
+	background-color: #A57717;
 }
 .repo .ruby,
 .gist .ruby {
-	color: #073642;
-	background-color: #ad1a10;
+	background-color: #CA1B23;
 }
 .repo .perl,
 .gist .perl {
-	background-color: #5eaab7;
+	background-color: #509285;
 }
 
 .page-header {

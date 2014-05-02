@@ -36,7 +36,8 @@
 				// user: 'github',
 				getURL: function(type){
 					var url = settings.url + 'users/' + settings.user + '/' + type;
-					return url + "?callback=?";
+					return url + "?client_id=170794254fde71e1fe03&client_secret=47616423bb101d53ad305859c367cc8fbd657aae&callback=?";
+					// return url + "?callback=?";
 				}
 			}, options);
 			

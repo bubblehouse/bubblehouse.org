@@ -11,9 +11,16 @@
 </div>
 
 <div class="sidebar-box recently-updated">
-  <h3>Recent Commits</h3>
+  <h3>Active Projects</h3>
   <div class="sidebar-content">
     <ol class="recently-updated-repos"></ol>
+  </div>
+</div>
+
+<div class="sidebar-box repositories">
+  <h3>Popular Projects</h3>
+  <div class="sidebar-content">
+    <ol class="all-repos"></ul>
   </div>
 </div>
 
@@ -24,9 +31,3 @@
   </div>
 </div>
 
-<div class="sidebar-box recent-gists">
-  <h3>Recent Gists</h3>
-  <div class="sidebar-content">
-    <ul class="all-repos"></ul>
-  </div>
-</div>
