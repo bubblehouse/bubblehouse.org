@@ -1,5 +1,6 @@
-<div class="side-box">
-  <div class="box-content">
+<div class="sidebar-box">
+  <h3>Links</h3>
+  <div class="sidebar-content">
   <ul>
     <li><a href="https://github.com/philchristensen">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/philchristensennyc">LinkedIn</a></li>
@@ -9,3 +10,23 @@
   </div>
 </div>
 
+<div class="sidebar-box recently-updated">
+  <h3>Recent Commits</h3>
+  <div class="sidebar-content">
+    <ol class="recently-updated-repos"></ol>
+  </div>
+</div>
+
+<div class="sidebar-box recent-gists">
+  <h3>Recent Gists</h3>
+  <div class="sidebar-content">
+    <ol class="recent-gist-list"></ol>
+  </div>
+</div>
+
+<div class="sidebar-box recent-gists">
+  <h3>Recent Gists</h3>
+  <div class="sidebar-content">
+    <ul class="all-repos"></ul>
+  </div>
+</div>

@@ -40,8 +40,56 @@ blockquote {
 	border-color: #cb4b16;
 }
 
+
+.repo .language,
+.gist .language {
+	display: inline-block;
+	min-width: 65px;
+	opacity: 0.6;
+	text-transform: lowercase;
+	line-height: 90%;
+	border-radius: 4px;
+	background-color: #073642;
+}
+
+.repo .python,
+.gist .python {
+	background-color: #add39b;
+}
+.repo .objective-c,
+.gist .objective-c {
+	background-color: #add39b;
+}
+.repo .javascript,
+.gist .javascript {
+	background-color: #add39b;
+}
+.repo .shell,
+.gist .shell {
+	background-color: #d2c1da;
+}
+.repo .ruby,
+.gist .ruby {
+	color: #073642;
+	background-color: #ad1a10;
+}
+.repo .perl,
+.gist .perl {
+	background-color: #5eaab7;
+}
+
+.page-header {
+	border-bottom: 1px solid #073642;
+}
+
 .sidebar {
-	margin-top: 72px;
+	margin-top: 29px;
+}
+
+.sidebar-box h3 {
+	font-weight: normal;
+	font-size: 22px;
+	border-bottom: 1px solid #073642;
 }
 
 .navbar-inner {
