@@ -1,15 +1,3 @@
-<div class="sidebar-box">
-  <h3>Links</h3>
-  <div class="sidebar-content">
-  <ul>
-    <li><a href="https://github.com/philchristensen">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/philchristensennyc">LinkedIn</a></li>
-    <li><a href="http://osrc.dfm.io/philchristensen">Open Source Report Card</a></li>
-    <li><a href="https://coderwall.com/philchristensen">Coderwall</a></li>
-  </ul>
-  </div>
-</div>
-
 <div class="sidebar-box recently-updated">
   <h3>Active Projects</h3>
   <div class="sidebar-content">

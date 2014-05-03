@@ -8,18 +8,19 @@ footer {
 }
 
 a, a:visited, a:active {
-	color: #2aa198;
+	color: #287064;
 	border-color: #073642;
 }
 
 a:hover {
 	background-color: #073642;
+  text-decoration: none;
 	border-color: #073642;
 	color: #2aa198;
 }
 
 h1, h2, h3 {
-	color: #A5BBBD;
+	color: #406292;
 }
 
 h1 a, h1 a:visited, h1 a:active {
@@ -40,6 +41,10 @@ blockquote {
 	border-color: #cb4b16;
 }
 
+.repo {
+  white-space: nowrap;
+}
+
 .repo .language,
 .gist .language {
 	display: inline-block;
@@ -51,41 +56,49 @@ blockquote {
 	font-weight: bold;
 	line-height: 16px;
 	border-radius: 4px;
-	background-color: #04242B;
+	background-color: #10586C;
 	color: #002a35;
 }
 
-.repo .python,
+/*.repo .python,
 .gist .python {
-	background-color: #728914;
+  background-color: #728914;
 }
 .repo .puppet,
 .gist .puppet {
-	background-color: #5859B7;
+  background-color: #5859B7;
 }
 .repo .objective-c,
 .gist .objective-c {
-	background-color: #5C3A1A;
+  background-color: #5C3A1A;
 }
 .repo .javascript,
 .gist .javascript {
-	background-color: #C61B6E;
+  background-color: #C61B6E;
 }
 .repo .shell,
 .gist .shell {
-	background-color: #A57717;
+  background-color: #A57717;
 }
 .repo .ruby,
 .gist .ruby {
-	background-color: #CA1B23;
+  background-color: #CA1B23;
 }
 .repo .perl,
 .gist .perl {
-	background-color: #509285;
+  background-color: #509285;
 }
-
+*/
 .page-header {
 	border-bottom: 1px solid #073642;
+}
+
+.page-header h1 {
+  color: #526691;
+}
+
+.page-header small {
+  color: #11485D;
 }
 
 .sidebar {
@@ -93,9 +106,14 @@ blockquote {
 }
 
 .sidebar-box h3 {
+  color: #11485D;
 	font-weight: normal;
 	font-size: 22px;
 	border-bottom: 1px solid #073642;
+}
+
+.sidebar-box ol {
+  color: #11485D;
 }
 
 .navbar-inner {
@@ -111,11 +129,18 @@ blockquote {
 
 .navbar .nav>li>a {
   text-shadow: none;
-	
 }
 
 .navbar .nav>li>a:hover {
-  color: #A5BBBD;
+  color: #B7B8BD;
+}
+
+.navbar .nav>.active>a {
+	background-color:#073642;
+}
+
+.navbar .nav>.active>a:hover {
+	background-color:#073642;
 }
 
 /* Custom container */
@@ -167,11 +192,13 @@ blockquote {
 .tag_box a {
   padding: 3px 6px;
   margin: 2px;
-  background: #eee;
-  color: #555;
+	opacity: 0.6;
+	background-color: #10586C;
+	color: #002a35;
   border-radius: 3px;
   text-decoration: none;
-  border: 1px dashed #cccccc; }
+  font-weight: bold;
+}
 
 .tag_box a span {
   vertical-align: super;

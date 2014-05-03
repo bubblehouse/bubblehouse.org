@@ -5,6 +5,8 @@ tagline: IT Consulting Services
 ---
 {% include JB/setup %}
 
+<div class="marketing-copy">
+
 <h3>Cloud Solutions</h3>
 
 <div class="row" style="margin-left: 10px">
@@ -73,6 +75,5 @@ tagline: IT Consulting Services
   </div>
 </div>
 
-
-
+</div>
 
