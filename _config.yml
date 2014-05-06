@@ -6,7 +6,7 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock", "changelog.md", "History.markdown"]
+exclude: [".bundle", "vendor", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock", "changelog.md", "History.markdown"]
 pygments: true
 
 # Themes are encouraged to use these universal variables 
