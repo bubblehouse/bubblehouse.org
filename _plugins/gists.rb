@@ -1,4 +1,8 @@
+# encoding: utf-8
+
 require 'octokit'
+require "net/https"
+require 'uri'
 
 module Jekyll
 
@@ -13,13 +17,27 @@ module Jekyll
       @dir = '.'
       
       self.data = {
-        :title =>  "Gist: #{gist[:description]}"
+        "title" =>  "Gist: #{gist[:description]}",
+        "layout" => "page",
+        "created" => gist[:created_at].to_i
       }
       
       self.content = gist[:files].to_attrs.keys.collect { |key|
-        "{% gist #{gist[:id]} #{key} %}"
+        uri = URI.parse(gist[:files][key][:raw_url])
+        
+        http = Net::HTTP.new(uri.host, uri.port)
+        http.use_ssl = true
+        http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+        request = Net::HTTP::Get.new(uri.request_uri)
+        response = http.request(request)
+        
+        s = ''
+        s << "\n```#{(gist[:files][key][:language] || '').downcase}\n"
+        s << response.body.force_encoding('utf-8')
+        s << "\n```\n"
+        s
       }.join("\n")
-      
+
       self.slug = gist[:description].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
       self.ext = 'md'
       self.date = gist[:created_at]
