@@ -1,0 +1,51 @@
+          <li>
+                  <div class="repo">
+                    <small class="language puppet">Puppet</small>
+                    <a class="name" href="https://github.com/philchristensen/autobuntu">autobuntu</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/django-salesforce">django-salesforce</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language objective-c">Objective-C</small>
+                    <a class="name" href="https://github.com/philchristensen/CocoaArtnet">CocoaArtnet</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/python-artnet">python-artnet</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/modu">modu</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language objective-c">Objective-C</small>
+                    <a class="name" href="https://github.com/philchristensen/VideoDMX">VideoDMX</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/antioch">antioch</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/txsftp">txsftp</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language objective-c">Objective-C</small>
+                    <a class="name" href="https://github.com/philchristensen/JamNotes">JamNotes</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/starwars-dot-gif">starwars-dot-gif</a>
+                  </div>
+                </li>

@@ -36,9 +36,11 @@ module Jekyll
       client = Octokit::Client.new \
         :access_token => "2b670ab076cf7b4a6eb830e3388fa445a2a5b16e"
       
-      Octokit.user('philchristensen').rels[:gists].get.data.each do |gist|
-        post = GistPost.new(site, site.source, gist)
-        site.posts << post
+      client.user('philchristensen').rels[:gists].get.data.each do |gist|
+        if(gist[:public])
+          post = GistPost.new(site, site.source, gist)
+          site.posts << post
+        end
       end
       site.posts.sort! { |a,b| a.date <=> b.date }
     end

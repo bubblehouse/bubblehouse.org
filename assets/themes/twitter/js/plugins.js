@@ -1,90 +1,3 @@
-(function($){
-	var settings;
-	
-	function formatObject(repo){
-		repo.pushed_at = new Date(repo.pushed_at);
-		
-		var weekHalfLife  = 1.146 * Math.pow(10, -9);
-		
-		var pushDelta    = (new Date) - Date.parse(repo.pushed_at);
-		var createdDelta = (new Date) - Date.parse(repo.created_at);
-		
-		var weightForPush = 1;
-		var weightForWatchers = 1.314 * Math.pow(10, 7);
-		
-		repo.hotness = weightForPush * Math.pow(Math.E, -1 * weekHalfLife * pushDelta);
-		repo.hotness += weightForWatchers * repo.watchers / createdDelta;
-	}
-	
-	function hotnessComparator(a, b) {
-		if (a.hotness < b.hotness) return 1;
-		if (b.hotness < a.hotness) return -1;
-		return 0;
-	}
-	
-	function freshnessComparator(a, b) {
-		if (a.pushed_at < b.pushed_at) return 1;
-		if (b.pushed_at < a.pushed_at) return -1;
-		return 0;
-	}
-	
-	var methods = {
-		init: function(options){
-			// Create some defaults, extending them with any options that were provided
-			settings = $.extend({
-				// url: 'https://api.github.com/',
-				// user: 'github',
-				getURL: function(type){
-					var url = settings.url + 'users/' + settings.user + '/' + type;
-					return url + "?client_id=170794254fde71e1fe03&client_secret=47616423bb101d53ad305859c367cc8fbd657aae&callback=?";
-					// return url + "?callback=?";
-				}
-			}, options);
-			
-			return this;
-		},
-		
-		repos: function(callback){
-			$.getJSON(settings.getURL('repos'), function(reposResult){
-				var repos = reposResult.data;
-				$.each(repos, function (i, repo){
-					formatObject(repo);
-				});
-					
-				callback({
-					repos: repos,
-					byHotness: function(){
-						var ordered = repos.slice(0);
-						ordered.sort(hotnessComparator);
-						return ordered;
-					},
-					threeFreshest: function(){
-						var ordered = repos.slice(0);
-						ordered.sort(freshnessComparator);
-						return ordered.slice(0,10);
-					}
-				});
-			});
-		},
-		
-		gists: function(callback){
-			$.getJSON(settings.getURL('gists'), callback);
-		},
-	};
-	
-	$.fn.github = function(method){
-		if(methods[method]){
-			return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
-		}
-		else if(typeof method === 'object' || !method){
-			return methods.init.apply(this, arguments);
-		}
-		else{
-			$.error('Method ' +	 method + ' does not exist.');
-		}
-	};
-})(jQuery);
-
 /// strftime
 /// https://github.com/samsonjs/strftime
 /// @_sjs
@@ -92,7 +5,7 @@
 /// Copyright 2010 - 2011 Sami Samhuri <sami.samhuri@gmail.com>
 /// MIT License
 
-;(function() {
+(function() {
 
   //// Export the API
   var namespace;

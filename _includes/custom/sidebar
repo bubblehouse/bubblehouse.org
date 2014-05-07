@@ -1,10 +1,3 @@
-<div class="sidebar-box recently-updated">
-  <h3>Active Projects</h3>
-  <div class="sidebar-content">
-    <ol class="recently-updated-repos"></ol>
-  </div>
-</div>
-
 <div class="sidebar-box recent-posts">
   <h3>Featured Posts</h3>
   <div class="sidebar-content">
@@ -16,17 +9,21 @@
   </div>
 </div>
 
-<div class="sidebar-box repositories">
-  <h3>Popular Projects</h3>
+<div class="sidebar-box recently-updated">
+  <h3>Active Projects</h3>
   <div class="sidebar-content">
-    <ol class="all-repos"></ul>
+    <ol class="recently-updated-repos">
+    {% include generated/active_repos %}
+    </ol>
   </div>
 </div>
 
-<div class="sidebar-box recent-gists">
-  <h3>Recent Gists</h3>
+<div class="sidebar-box repositories">
+  <h3>Popular Projects</h3>
   <div class="sidebar-content">
-    <ol class="recent-gist-list"></ol>
+    <ol class="popular-repos">
+    {% include generated/popular_repos %}
+    </ol>
   </div>
 </div>
 
