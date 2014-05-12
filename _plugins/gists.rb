@@ -31,15 +31,22 @@ module Jekyll
         request = Net::HTTP::Get.new(uri.request_uri)
         response = http.request(request)
         
+        language = (gist[:files][key][:language] || '').downcase
+        language = (language == 'shell' ? 'bash' : language)
+        
         s = ''
-        s << "\n```#{(gist[:files][key][:language] || '').downcase}\n"
+        if(language != 'markdown')
+          s << "\n```#{language}\n"
+        end
         s << response.body.force_encoding('utf-8')
-        s << "\n```\n"
+        if(language != 'markdown')
+          s << "\n```\n"
+        end
         s
       }.join("\n")
 
       self.slug = gist[:description].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-      self.ext = 'md'
+      self.ext = '.md'
       self.date = gist[:created_at]
       self.categories = ['gist', 'coding']
       self.tags = []
