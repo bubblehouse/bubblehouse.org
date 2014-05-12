@@ -17,7 +17,7 @@ module Jekyll
       @dir = '.'
       
       self.data = {
-        "title" =>  "Gist: #{gist[:description]}",
+        "title" =>  "#{gist[:description]}",
         "layout" => "page",
         "created" => gist[:created_at].to_i
       }
@@ -42,8 +42,8 @@ module Jekyll
         if(language != 'markdown')
           s << "\n```\n"
         end
-        s
-      }.join("\n")
+        "#{s}\n[#{key}](#{gist[:html_url]}) hosted by [GitHub](https://github.com)"
+      }.join("\n\n")
 
       self.slug = gist[:description].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
       self.ext = '.md'
