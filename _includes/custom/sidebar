@@ -9,19 +9,16 @@
   </div>
 </div>
 
-<div class="sidebar-box recently-updated">
-  <h3>Active Projects</h3>
-  <div class="sidebar-content">
-    <ol class="recently-updated-repos">
-    {% include generated/active_repos %}
-    </ol>
-  </div>
-</div>
-
 <div class="sidebar-box repositories">
-  <h3>Popular Projects</h3>
+  <h3>GitHub Projects</h3>
   <div class="sidebar-content">
     <ol class="popular-repos">
+    <li>
+      <div class="repo">
+        <small class="language python">Python</small>
+        <a class="name" href="https://github.com/freelancersunion/django-salesforce">django-salesforce</a>
+      </div>
+    </li>
     {% include generated/popular_repos %}
     </ol>
   </div>

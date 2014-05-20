@@ -48,4 +48,24 @@
                     <small class="language objective-c">Objective-C</small>
                     <a class="name" href="https://github.com/philchristensen/VideoDMX">VideoDMX</a>
                   </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/djangopypi">djangopypi</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language shell">Shell</small>
+                    <a class="name" href="https://github.com/philchristensen/dot-files">dot-files</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/feedme">feedme</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/gh-profile">gh-profile</a>
+                  </div>
                 </li>

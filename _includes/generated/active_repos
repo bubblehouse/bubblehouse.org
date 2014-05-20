@@ -1,5 +1,10 @@
           <li>
                   <div class="repo">
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/imap-watch">imap-watch</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
                     <small class="language puppet">Puppet</small>
                     <a class="name" href="https://github.com/philchristensen/autobuntu">autobuntu</a>
                   </div>
@@ -42,10 +47,5 @@
                   <div class="repo">
                     <small class="language objective-c">Objective-C</small>
                     <a class="name" href="https://github.com/philchristensen/JamNotes">JamNotes</a>
-                  </div>
-                </li>          <li>
-                  <div class="repo">
-                    <small class="language python">Python</small>
-                    <a class="name" href="https://github.com/philchristensen/starwars-dot-gif">starwars-dot-gif</a>
                   </div>
                 </li>
