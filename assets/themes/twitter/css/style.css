@@ -41,6 +41,11 @@ blockquote {
 	border-color: #cb4b16;
 }
 
+.offering-logo {
+  max-height: 45px;
+  padding-bottom: 15px;
+}
+
 .repo {
   white-space: nowrap;
 }
@@ -60,37 +65,9 @@ blockquote {
 	color: #002a35;
 }
 
-/*.repo .python,
-.gist .python {
-  background-color: #728914;
-}
-.repo .puppet,
-.gist .puppet {
-  background-color: #5859B7;
-}
-.repo .objective-c,
-.gist .objective-c {
-  background-color: #5C3A1A;
-}
-.repo .javascript,
-.gist .javascript {
-  background-color: #C61B6E;
-}
-.repo .shell,
-.gist .shell {
-  background-color: #A57717;
-}
-.repo .ruby,
-.gist .ruby {
-  background-color: #CA1B23;
-}
-.repo .perl,
-.gist .perl {
-  background-color: #509285;
-}
-*/
 .page-header {
 	border-bottom: 1px solid #073642;
+  margin: 10px 0;
 }
 
 .page-header h1 {
@@ -121,10 +98,12 @@ blockquote {
   background-image: none;
 	background-color: #002a35;
 	color: #839496;
+  padding: 0;
 }
 
 .navbar .brand {
   text-shadow: none;
+  padding-left: 5px;
 }
 
 .navbar .nav>li>a {
@@ -146,7 +125,8 @@ blockquote {
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
-  max-width: 960px; }
+  max-width: 960px;
+}
 
 .container-narrow > hr {
   margin: 30px 0; }

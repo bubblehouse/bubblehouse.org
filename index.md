@@ -11,7 +11,7 @@ tagline: IT Consulting Services
 
 <div class="row" style="margin-left: 10px">
   <div class="span2">
-    <img src="{{ ASSET_PATH }}images/aws-logo.png" alt="Powered by AWS Cloud Computing">
+    <img class="offering-logo" src="{{ ASSET_PATH }}images/aws-logo.png" alt="Powered by AWS Cloud Computing">
   </div>
 
   <div class="span10">
@@ -27,7 +27,7 @@ tagline: IT Consulting Services
 
 <div class="row" style="margin-left: 10px">
   <div class="span2">
-    <img src="{{ ASSET_PATH }}images/puppetlabs-logo.png" alt="Powered by Puppet">
+    <img class="offering-logo" src="{{ ASSET_PATH }}images/puppetlabs-logo.png" alt="Powered by Puppet">
   </div>
 
   <div class="span10">
@@ -43,7 +43,7 @@ tagline: IT Consulting Services
 
 <div class="row" style="margin-left: 10px">
   <div class="span2">
-    <img src="{{ ASSET_PATH }}images/nagios-logo.png" alt="Powered by Nagios">
+    <img class="offering-logo" src="{{ ASSET_PATH }}images/nagios-logo.png" alt="Powered by Nagios">
   </div>
 
   <div class="span10">
@@ -59,8 +59,8 @@ tagline: IT Consulting Services
 
 <div class="row" style="margin-left: 10px">
   <div class="span2">
-    <img src="{{ ASSET_PATH }}images/git-logo.png" alt="Powered by Git"><br><br>
-    <img src="{{ ASSET_PATH }}images/jenkins-logo.png" alt="Powered by Jenkins">
+    <img class="offering-logo" src="{{ ASSET_PATH }}images/git-logo.png" alt="Powered by Git"><br><br>
+    <img class="offering-logo" src="{{ ASSET_PATH }}images/jenkins-logo.png" alt="Powered by Jenkins">
   </div>
 
   <div class="span10">
