@@ -9,7 +9,7 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-exclude: [".bundle", "vendor", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock", "changelog.md", "History.markdown"]
+exclude: ["s3_website.yml", ".bundle", "vendor", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock", "changelog.md", "History.markdown"]
 pygments: true
 encoding: utf-8
 

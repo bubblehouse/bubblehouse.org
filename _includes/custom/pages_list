@@ -1,2 +1,3 @@
-<li><a href="/archive.html">Archive</a></li>
-<li><a href="/categories.html">Categories</a></li>
+<li><a href="{{ BASE_PATH }}/archive.html">Archive</a></li>
+<li><a href="{{ BASE_PATH }}/categories.html">Categories</a></li>
+<li><a href="{{ BASE_PATH }}/contact.html">Contact</a></li>

@@ -41,6 +41,14 @@ blockquote {
 	border-color: #cb4b16;
 }
 
+textarea.contact-content {
+  width: 100%;
+  height: 400px;
+}
+input {
+  display: block!important;
+}
+
 .offering-logo {
   max-height: 45px;
   padding-bottom: 15px;

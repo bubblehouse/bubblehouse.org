@@ -12,9 +12,18 @@ tagline: IT Consulting Services
 <div class="row" style="margin-left: 10px">
   <form action="http://getsimpleform.com/messages?form_api_token=197234d2fc345e203a90f9401980bd36" method="post">
     <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-    <!-- <input type="hidden" name="redirect_to" value="" /> -->
+    <input type="hidden" name="redirect_to" value="{{site.production_url}}/thank-you.html" />
     <!-- all your input fields here.... -->
-    <textarea name="content"></textarea>
+	<label for="email-address-field">Email Address:</label>
+    <input type="email" id="email-address-field" name="email_address" placeholder="email address" />
+	<label for="phone-number-field">Phone Number:</label>
+    <input type="tel" id="phone-number-field" name="phone_number" placeholder="phone number" />
+	<label for="contact-method-field">Preferred Contact Method:</label>
+	<select id="contact-method" name="preferred-method">
+		<option value="email">Prefer email</option>
+		<option value="phone">Prefer phone</option>
+	</select>
+    <textarea class="contact-content" name="content"></textarea>
     <input type="submit" value="Submit" />
   </form>
 </div>
