@@ -65,7 +65,7 @@
                   </div>
                 </li>          <li>
                   <div class="repo">
-                    <small class="language python">Python</small>
-                    <a class="name" href="https://github.com/philchristensen/gh-profile">gh-profile</a>
+                    <small class="language shell">Shell</small>
+                    <a class="name" href="https://github.com/philchristensen/bash-functions">bash-functions</a>
                   </div>
                 </li>

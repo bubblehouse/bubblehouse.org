@@ -1,7 +1,12 @@
           <li>
                   <div class="repo">
-                    <small class="language python">Python</small>
-                    <a class="name" href="https://github.com/philchristensen/imap-watch">imap-watch</a>
+                    <small class="language objective-c">Objective-C</small>
+                    <a class="name" href="https://github.com/philchristensen/CocoaArtnet">CocoaArtnet</a>
+                  </div>
+                </li>          <li>
+                  <div class="repo">
+                    <small class="language javascript">JavaScript</small>
+                    <a class="name" href="https://github.com/philchristensen/FrozenCookies">FrozenCookies</a>
                   </div>
                 </li>          <li>
                   <div class="repo">
@@ -11,12 +16,12 @@
                 </li>          <li>
                   <div class="repo">
                     <small class="language python">Python</small>
-                    <a class="name" href="https://github.com/philchristensen/django-salesforce">django-salesforce</a>
+                    <a class="name" href="https://github.com/philchristensen/imap-watch">imap-watch</a>
                   </div>
                 </li>          <li>
                   <div class="repo">
-                    <small class="language objective-c">Objective-C</small>
-                    <a class="name" href="https://github.com/philchristensen/CocoaArtnet">CocoaArtnet</a>
+                    <small class="language python">Python</small>
+                    <a class="name" href="https://github.com/philchristensen/django-salesforce">django-salesforce</a>
                   </div>
                 </li>          <li>
                   <div class="repo">
@@ -42,10 +47,5 @@
                   <div class="repo">
                     <small class="language python">Python</small>
                     <a class="name" href="https://github.com/philchristensen/txsftp">txsftp</a>
-                  </div>
-                </li>          <li>
-                  <div class="repo">
-                    <small class="language objective-c">Objective-C</small>
-                    <a class="name" href="https://github.com/philchristensen/JamNotes">JamNotes</a>
                   </div>
                 </li>
